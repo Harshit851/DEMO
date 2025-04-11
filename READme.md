@@ -22,9 +22,9 @@ Make sure you have the following Python packages installed:
 
 You can install them with:
 
-
+```
 pip install streamlit pandas python-dotenv google-generativeai
-
+```
 
 ## Setup
 
