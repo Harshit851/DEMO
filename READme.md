@@ -39,4 +39,6 @@ api=your_gemini_api_key_here
 ## How to Run
 Start the app with:
 
+```
 streamlit run tryy.py
+```
