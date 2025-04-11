@@ -29,12 +29,10 @@ pip install streamlit pandas python-dotenv google-generativeai
 ## Setup
 
 1. Clone the project or download the files.
-
 2. Create a .env file in the root directory and add your Gemini API key like this:
-
-
+```
 api=your_gemini_api_key_here
-
+```
 
 ## How to Run
 Start the app with:
