@@ -90,3 +90,4 @@ if uploaded_file:
                 st.warning("The result must contain at least one categorical and one numeric column for visualization.")
         else:
             st.warning("No results returned for this query.")
+#.
