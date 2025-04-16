@@ -1,63 +1,126 @@
 from dotenv import load_dotenv
-load_dotenv() # Load environment variables from .env file
+load_dotenv()  # Load environment variables from .env file
+
 import os
 import streamlit as st
 import sqlite3
-
+import pandas as pd
+import plotly.express as px
 import google.generativeai as genai
 
-## configure the API key
-genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
+# Configure the API key
+try:
+    genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
+except Exception as e:
+    st.error(f"Error configuring Google Gemini API: {e}")
 
-## Function to load Google Gemini model and provide sql query as response
-
+# Function to load Google Gemini model and provide SQL query as response
 def get_gemini_response(question, prompt):
-    model = genai.GenerativeModel('gemini-2.0-flash')
-    response = model.generate_content([prompt[0], question])
-    return response.text
+    try:
+        model = genai.GenerativeModel('gemini-2.0-flash')
+        response = model.generate_content([prompt[0], question])
+        return response.text
+    except Exception as e:
+        st.error(f"Error generating response from Gemini: {e}")
+        return None
 
-def read_sql_query(sql,db):
-    conn=sqlite3.connect(db)
-    cur=conn.cursor()
-    cur.execute(sql)
-    rows=cur.fetchall()
-    conn.commit()
-    conn.close()
-    for row in rows:
-        print(row)
-    return rows
+# Prompt for the Gemini model
+prompt = [
+    """
+    You are a SQL expert in converting English questions to SQL query!
+    The SQL database has the CustomerData table with the following columns:
+    CustomerID, Name, Segment, Country, City.
 
-prompt =[
-        """
-            You are a SQL expert in converting English questions
-            to SQL query! The SQL database has the CustomerData table 
-            and has the folowwing columns: CustomerID, Name, Segment, Country, City.
-            For example1, How many entries of records are present? the sql
-            command will be SELECT COUNT(*) FROM CustomerData; \n
-            For example2, How many customers are there in the CustomerData table?
-            The sql command will be SELECT COUNT(*) FROM CustomerData; \n   
-            For example3, How many customers resides in the city of New York?
-            The sql command will be SELECT COUNT(*) FROM CustomerData WHERE City='New York'; \n
-            For example4, How many customers are of consumer segment?
-            The sql command will be SELECT COUNT(*) FROM CustomerData WHERE Segment='Consumer'; \n
-            Also, the sql command should not have ''' in the beginning and end of the command.
-        """
-        ]
+    Example1: How many entries of records are present?
+    → SELECT COUNT(*) FROM CustomerData;
 
-##Streamlit app
+    Example2: How many customers reside in the city of New York?
+    → SELECT COUNT(*) FROM CustomerData WHERE City='New York';
 
+    Example3: How many customers are of consumer segment?
+    → SELECT COUNT(*) FROM CustomerData WHERE Segment='Consumer';
+
+    Do not wrap SQL commands with triple quotes or markdown formatting.
+    """
+]
+
+# Streamlit app config
 st.set_page_config(page_title="Gemini SQL Query Generator", page_icon=":guardsman:", layout="wide")
 st.header("Gemini App to Retrieve SQL data")
 
-question = st.text_input("Input: ", key="input")
+# Text input for user question
+user_question = st.text_input("Enter your question:")
 
-submit=st.button("Ask the question")
+df = pd.DataFrame()  # Initialize df to avoid reference before assignment
 
-#if submit is clicked
-if submit:
-    response=get_gemini_response(question, prompt)
-    print(response)
-    data = read_sql_query(response, 'database.db')
-    st.header(f'The SQL query is:- \n {response}')
-    for row in data:
-        st.subheader(f'The result is:- {row}')
+# Generate and Run SQL
+if user_question:
+    with st.spinner("Generating SQL query using Gemini..."):
+        try:
+            response = get_gemini_response(user_question, prompt)
+            sql_query = response.strip().strip("sql").strip("```")
+            st.subheader("📝 Generated SQL Query")
+            st.code(sql_query, language="sql")
+        except Exception as e:
+            st.error(f"Error generating SQL: {e}")
+            st.stop()
+
+    with st.spinner("📡 Executing query on SQLite..."):
+        try:
+            conn = sqlite3.connect("database.db")
+            df = pd.read_sql_query(sql_query, conn)
+            conn.close()
+            st.success("✅ Query executed successfully!")
+        except Exception as e:
+            st.error(f"SQL Execution Error: {e}")
+            st.stop()
+
+# Display Results
+if not df.empty:
+    # Always show the table view
+    st.subheader("📋 Table View of the Data")
+    st.dataframe(df)
+
+    # Handle single-number or single-cell result
+    if df.shape == (1, 1):
+        st.subheader("🔢 Single Value Result")
+        st.metric(label=df.columns[0], value=df.iloc[0, 0])
+
+    # Dropdown for charts and summary only (when there is more than one column)
+    elif df.shape[1] > 1:
+        st.subheader("📊 Choose how to visualize the result")
+        output_type = st.selectbox("Select visualization type", ["Bar Chart", "Line Chart", "Pie Chart", "Area Chart", "Histogram", "Summary"])
+
+        # Chart or Summary rendering
+        if output_type != "Summary":
+            with st.expander("📈 Chart Settings", expanded=True):
+                if df.shape[1] < 2:
+                    st.warning("Need at least two columns for charting.")
+                else:
+                    x_col = st.selectbox("X-axis", df.columns, index=0)
+                    y_col = st.selectbox("Y-axis", df.columns, index=1)
+                    theme_color = st.color_picker("🎨 Pick a chart color", "#636EFA")
+
+                    if output_type == "Bar Chart":
+                        fig = px.bar(df, x=x_col, y=y_col, color_discrete_sequence=[theme_color])
+                    elif output_type == "Line Chart":
+                        fig = px.line(df, x=x_col, y=y_col, color_discrete_sequence=[theme_color])
+                    elif output_type == "Pie Chart":
+                        fig = px.pie(df, names=x_col, values=y_col)
+                    elif output_type == "Area Chart":
+                        fig = px.area(df, x=x_col, y=y_col, color_discrete_sequence=[theme_color])
+                    elif output_type == "Histogram":
+                        fig = px.histogram(df, x=y_col, nbins=20, color_discrete_sequence=[theme_color])
+
+                    st.plotly_chart(fig, use_container_width=True)
+
+        else:
+            # Summary section
+            st.subheader("🧾 Summary")
+            if df.shape[1] >= 2:
+                total = df.iloc[:, 1].sum()
+                top_row = df.iloc[df.iloc[:, 1].idxmax()]
+                st.markdown(f"- *Total {df.columns[1]}*: {total}")
+                st.markdown(f"- *Top {df.columns[0]}*: {top_row[0]} with value {top_row[1]}")
+            else:
+                st.info("Not enough data to summarize.")

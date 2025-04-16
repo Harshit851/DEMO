@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS CustomerData(
 cursor.execute(table_info)
 
 # Path to the CSV file
-csv_file_path = r'C:\Users\Abhishek Raghav\Downloads\Customer Data.csv'
+csv_file_path = r'C:\Users\singh\Downloads\Customer Data.csv'
 
 # Insert records from the CSV file into the table
 with open(csv_file_path, 'r') as file:
