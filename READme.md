@@ -38,10 +38,7 @@ Auto-generated textual summaries help interpret the graph (e.g., highest/lowest 
 ````
 
 ## 📦 Installation
-
-```
 Make sure Python is installed, then run:
-````
 
 ```
 pip install streamlit pandas matplotlib
