@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-genai.configure(api_key=os.getenv('AIzaSyCiWdmF8HWxmtEnDPdERhvTexu_KhEnZFA'))
+genai.configure(api_key=os.getenv(''))
 model = genai.GenerativeModel('gemini-2.0-flash')
 
 def generate_sql_query(user_question, df):
