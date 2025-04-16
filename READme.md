@@ -1,42 +1,79 @@
-# Streamlit SQl Master 
+## Data Insight Assistant
+A Streamlit-powered application that transforms natural language questions into SQL queries, executes them on user-uploaded CSV files, and presents both tabular results and interactive visualizations with basic graph summaries.
 
-# CSV SQL Assistant
+## 🚀 Features
+````
+📂 Upload any CSV dataset
 
-A simple Streamlit app that lets you:
+💬 Ask questions in plain English
 
-- Upload a CSV file  
-- Ask questions in plain English  
-- Automatically generate SQL queries using Gemini  
-- View results instantly
+🧠 Auto-generates SQL queries using a language model
 
----
+📊 View results as tables, bar/line/pie charts
 
-##  Dependencies
+📝 Read quick insights through graph interpretations
 
-Make sure you have the following Python packages installed:
+📥 Download query results as CSV
+````
 
-- streamlit  
-- pandas  
-- python-dotenv  
-- google-generativeai
+### 🛠️ How It Works
+```
+Upload CSV
+Load any structured dataset via the file uploader.
 
-You can install them with:
+Ask a Question
+Enter a natural language question about the data (e.g., "What is the total sales by region?").
+
+SQL Generation & Execution
+Your query is converted into an SQL statement and executed on the uploaded data.
+
+Results Display
+The app shows the output as a table and lets you download it.
+
+Visualize the Output
+Choose chart type (Bar, Line, Pie) and axis columns to generate a dynamic chart.
+
+Read Insights
+Auto-generated textual summaries help interpret the graph (e.g., highest/lowest values, trend lines).
+````
+
+## 📦 Installation
 
 ```
-pip install streamlit pandas python-dotenv google-generativeai
-```
-
-## Setup
-
-1. Clone the project or download the files.
-2. Create a .env file in the root directory and add your Gemini API key like this:
-```
-api=your_gemini_api_key_here
-```
-
-## How to Run
-Start the app with:
+Make sure Python is installed, then run:
+````
 
 ```
-streamlit run tryy.py
+pip install streamlit pandas matplotlib
 ```
+
+## Running the App
+
+````
+streamlit run app.py
+
+````
+
+📁 Project Structure
+
+```
+├── app.py                 # Main Streamlit app
+├── Gemini.py              # SQL generation and query execution logic
+├── README.md              # Project documentation
+
+```
+
+## 💡 Future Improvements
+
+```
+Export charts as images or PDF
+
+Support multiple CSV joins
+
+Add advanced chart options (e.g., scatter, heatmap)
+
+Enhance natural language understanding with context
+
+```
+
+
