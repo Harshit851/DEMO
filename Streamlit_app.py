@@ -53,7 +53,7 @@ st.markdown("""
 
 
 # === FIXED CONFIG ===
-FIXED_DATABASE = "Harshit"
+FIXED_DATABASE = "XYZ" # Replace with your actual database name
 
 st.title("Data Insight Assistant")
 st.markdown("Select tables, ask questions, and visualize insights from your database.")
