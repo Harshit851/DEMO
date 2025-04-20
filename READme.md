@@ -1,9 +1,9 @@
-## Data Insight Assistant
-A Streamlit-powered application that transforms natural language questions into SQL queries, executes them on user-uploaded CSV files, and presents both tabular results and interactive visualizations with basic graph summaries.
+## Mysql Assistant
+A Streamlit-powered application that transforms natural language questions into SQL queries based on the data(Tables) are there in the database and presents both tabular results and interactive visualizations with basic graph summaries.
 
 ## 🚀 Features
 ````
-📂 Upload any CSV dataset
+📂 choose table from Connected database 
 
 💬 Ask questions in plain English
 
@@ -18,8 +18,7 @@ A Streamlit-powered application that transforms natural language questions into 
 
 ### 🛠️ How It Works
 ```
-Upload CSV
-Load any structured dataset via the file uploader.
+select the tables from the database 
 
 Ask a Question
 Enter a natural language question about the data (e.g., "What is the total sales by region?").
@@ -36,12 +35,14 @@ Choose chart type (Bar, Line, Pie) and axis columns to generate a dynamic chart.
 Read Insights
 Auto-generated textual summaries help interpret the graph (e.g., highest/lowest values, trend lines).
 ````
-
+```
 ## 📦 Installation
 Make sure Python is installed, then run:
 
 ```
 pip install streamlit pandas matplotlib
+pip install pyodbc
+pip install google.generativeai
 ```
 
 ## Running the App
@@ -51,23 +52,35 @@ streamlit run app.py
 
 ````
 
-📁 Project Structure
+## 📁 Project Structure
 
 ```
-├── app.py                 # Main Streamlit app
+├── streamlit_app.py                 # Main Streamlit app
 ├── Gemini.py              # SQL generation and query execution logic
 ├── README.md              # Project documentation
+├── Csv file               # Data (Customer,Sales,transactionlog tables)
+
+```
+## configuration
+```
+GEMINI_API_KEY = ""  ## insert your Api Key(GEMINI)
+SQL_SERVER_NAME = "Hp\SQLEXPRESS"  # Enter Your server name 
+SQL_DATABASE = "XYZ"  # your Database name 
+ODBC_DRIVER = "ODBC Driver 17 for SQL Server"  # Ensure this driver is installed
 
 ```
 
-## 💡 Future Improvements
 
+```
+```
+## 💡 Future Improvements
+```
 ```
 Export charts as images or PDF
 
-Support multiple CSV joins
+Connects to the server and access the database 
 
-Add advanced chart options (e.g., scatter, heatmap)
+Add advanced chart options (e.g., bar, line)
 
 Enhance natural language understanding with context
 
