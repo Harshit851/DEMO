@@ -3,7 +3,7 @@ import pyodbc
 import google.generativeai as genai
 
 # ✅ Gemini API Key
-genai.configure(api_key="SHUBH-api key")
+genai.configure(api_key="AIzaSyCmpaaVg7ORvj0-AMp_Jm0jBqfRPU2RQjw")
 
 # ✅ Gemini model
 model = genai.GenerativeModel("gemini-1.5-flash")
@@ -11,27 +11,49 @@ model = genai.GenerativeModel("gemini-1.5-flash")
 # ✅ SQL Server connection string (Windows Auth)
 conn_str = (
     "DRIVER={ODBC Driver 17 for SQL Server};"
-    "SERVER=LAPTOP-DOER-SHUBH-BHARDWAJ\\SQLEXPRESS;"
-    "DATABASE=transaction_data;"  
+    "SERVER=localhost\SQLEXPRESS;"
+    "DATABASE=test-manu;"  
     "Trusted_Connection=yes;"
 )
 
 # ✅ Get a sample of your table to show Gemini
 def get_table_info():
     with pyodbc.connect(conn_str) as conn:
-        df = pd.read_sql("SELECT TOP 3 * FROM transaction_data", conn)
-    return df
+        df_customer = pd.read_sql("SELECT * FROM CustomerTable", conn)
+        df_sales = pd.read_sql("SELECT * FROM SalesTable", conn)
+        df_transaction = pd.read_sql("SELECT * FROM TransactionLog", conn)
+
+    return {
+        'CustomerTable': df_customer,
+        'SalesTable': df_sales,
+        'TransactionLog': df_transaction
+    }
 
 # ✅ Generate SQL using Gemini AI
-def generate_sql_query(user_question, df_sample):
+def generate_sql_query_multi(user_question, table_dict):
+    """
+    table_dict: A dictionary with table names as keys and sample DataFrames as values.
+    Example:
+    {
+        'CustomerTable': df_customer,
+        'SalesTable': df_sales,
+        'TransactionLog': df_trans
+    }
+    """
+    table_descriptions = ""
+    for table_name, df in table_dict.items():
+        table_descriptions += f"Table name: {table_name}\n"
+        table_descriptions += f"Columns: {', '.join(df.columns)}\n"
+        sample_rows = df.head(3).to_dict(orient='records')
+        table_descriptions += f"Sample rows: {sample_rows}\n\n"
+
     prompt = f"""
-You are an expert in SQL Server. Write a valid SQL Server query using this info:
+You are an expert in SQL Server. Write a valid SQL Server query using the following database schema and sample data.
 
-Table name: transaction_data  
-Columns: {list(df_sample.columns)}  
-Sample rows: {df_sample.to_dict(orient='records')}  
+{table_descriptions}
 
-Question: {user_question}
+User question:
+{user_question}
 
 Return ONLY the SQL query without explanations.
 """
@@ -51,7 +73,7 @@ def run_query(sql):
 if __name__ == "__main__":
     print("✅ Ready! Connected to Gemini and SQL Server.")
     while True:
-        question = input("\nAsk a question about your transaction data (or type 'q' to quit): ")
+        question = input("\nAsk a question about your transaction_data (or type 'q' to quit): ")
         if question.lower() == 'q':
             break
         sample_data = get_table_info()

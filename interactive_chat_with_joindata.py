@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
-from Api_Sql_Gemini import get_table_info, generate_sql_query, run_query
+from api_sql_gemini import get_table_info, generate_sql_query_multi, run_query
 import base64
 import plotly.express as px
 import time
 
 # --- Page Config ---
-st.set_page_config(page_title="Chat Interface_Streamlit | SB", layout="wide")
+st.set_page_config(page_title="Chat Interface_Streamlit |Team-1", layout="wide")
 
 # --- Apply Background Images ---
 def add_bg_from_local(main_bg, sidebar_bg):
@@ -58,19 +58,19 @@ with st.sidebar:
 
     st.markdown("---")
     if st.checkbox("🔐 Show Gemini API Key"):
-        st.code("SHUBH_Api key", language="text")
+        st.code("AIzaSyCmpaaVg7ORvj0-AMp_Jm0jBqfRPU2RQjw", language="text")
     else:
         st.text("🔐 Gemini API Key: Hidden")
 
     st.markdown("---")
     selected_member = st.selectbox(
-        "👥 Team Members",
+        "👥 Team Members ",
         ["Mandakini Srivastava", "Navansh Mishra", "Shubh Bhardwaj"]
     )
 
 # --- Main Content ---
 st.title("💬 Interactive Chat Interface")
-st.caption("Powered by Gemini AI | SSMS | SB")
+st.caption("Powered by Gemini AI | SSMS | Team-1")
 
 st.header("Ask Anything about Transaction Data")
 user_input = st.text_input(
@@ -99,8 +99,9 @@ if rating and rating != '':
 # --- Run Query Logic ---
 if run_clicked and user_input.strip():
     with st.spinner("⏳ Please wait AI is thinking..."):
-        df_sample = get_table_info()
-        sql = generate_sql_query(user_input, df_sample)
+        #df_sample = get_table_info()
+        table_dict = get_table_info()
+        sql = generate_sql_query_multi(user_input, table_dict)
         st.session_state.sql_query = sql
         st.session_state.query_result = run_query(sql)
         st.session_state.history.append((user_input, sql))  # Save to history
@@ -142,25 +143,25 @@ if isinstance(st.session_state.query_result, pd.DataFrame):
 
         if chart_type == "Line Chart":
             x_axis = st.selectbox("Select X-axis", all_cols, key="line_x")
-            y_axis = st.multiselect("Select Y-axis (numeric)", numeric_cols, key="line_y")
+            y_axis = st.multiselect("Select Y-axis (text)", all_cols, key="line_y")
             if x_axis and y_axis:
                 st.line_chart(df.set_index(x_axis)[y_axis])
 
         elif chart_type == "Bar Chart":
             x_axis = st.selectbox("Select X-axis", all_cols, key="bar_x")
-            y_axis = st.selectbox("Select Y-axis (numeric)", numeric_cols, key="bar_y")
+            y_axis = st.selectbox("Select Y-axis (numeric)", all_cols, key="bar_y")
             if x_axis and y_axis:
                 st.bar_chart(df[[x_axis, y_axis]].set_index(x_axis))
 
         elif chart_type == "Pie Chart":
             label_col = st.selectbox("Select Category Column", all_cols, key="pie_label")
-            value_col = st.selectbox("Select Values Column (numeric)", numeric_cols, key="pie_value")
+            value_col = st.selectbox("Select Values Column (numeric)", all_cols, key="pie_value")
             if label_col and value_col:
                 fig = px.pie(df, names=label_col, values=value_col, title=f"Pie Chart of {value_col} by {label_col}")
                 st.plotly_chart(fig)
 
         elif chart_type == "Box Plot":
-            y_col = st.selectbox("Select Column for Box Plot", numeric_cols, key="box_y")
+            y_col = st.selectbox("Select Column for Box Plot", all_cols, key="box_y")
             category_col = st.selectbox("Select Category Column", all_cols, key="box_cat")
             if y_col and category_col:
                 fig = px.box(df, x=category_col, y=y_col, title=f"Box Plot of {y_col} by {category_col}")
