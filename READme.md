@@ -3,17 +3,17 @@ A Streamlit-powered application that transforms natural language questions into 
 
 ## 🚀 Features
 ````
-📂 choose table from Connected database 
+-📂 choose table from Connected database 
 
-💬 Ask questions in plain English
+-💬 Ask questions in plain English
 
-🧠 Auto-generates SQL queries using a language model
+-🧠 Auto-generates SQL queries using a language model
 
-📊 View results as tables, bar/line/pie charts
+-📊 View results as tables, bar/line/pie charts
 
-📝 Read quick insights through graph interpretations
+-📝 Read quick insights through graph interpretations
 
-📥 Download query results as CSV
+-📥 Download query results as CSV
 ````
 
 ### 🛠️ How It Works
@@ -35,7 +35,7 @@ Choose chart type (Bar, Line, Pie) and axis columns to generate a dynamic chart.
 Read Insights
 Auto-generated textual summaries help interpret the graph (e.g., highest/lowest values, trend lines).
 ````
-```
+
 ## 📦 Installation
 Make sure Python is installed, then run:
 
@@ -48,14 +48,14 @@ pip install google.generativeai
 ## Running the App
 
 ````
-streamlit run app.py
+streamlit run Streamlit_app.py
 
 ````
 
 ## 📁 Project Structure
 
 ```
-├── streamlit_app.py                 # Main Streamlit app
+├── streamlit_app.py       # Main Streamlit app
 ├── Gemini.py              # SQL generation and query execution logic
 ├── README.md              # Project documentation
 ├── Csv file               # Data (Customer,Sales,transactionlog tables)
@@ -63,26 +63,22 @@ streamlit run app.py
 ```
 ## configuration
 ```
-GEMINI_API_KEY = ""  ## insert your Api Key(GEMINI)
-SQL_SERVER_NAME = "Hp\SQLEXPRESS"  # Enter Your server name 
-SQL_DATABASE = "XYZ"  # your Database name 
-ODBC_DRIVER = "ODBC Driver 17 for SQL Server"  # Ensure this driver is installed
+-GEMINI_API_KEY = ""  ## insert your Api Key(GEMINI)
+-SQL_SERVER_NAME = "Hp\SQLEXPRESS"  # Enter Your server name 
+-SQL_DATABASE = "XYZ"  # your Database name 
+-ODBC_DRIVER = "ODBC Driver 17 for SQL Server"  # Ensure this driver is installed
 
 ```
 
-
-```
-```
 ## 💡 Future Improvements
 ```
-```
-Export charts as images or PDF
+-Export charts as images or PDF
 
-Connects to the server and access the database 
+-Connects to the server and access the database 
 
-Add advanced chart options (e.g., bar, line)
+-Add advanced chart options (e.g., bar, line)
 
-Enhance natural language understanding with context
+-Enhance natural language understanding with context
 
 ```
 
