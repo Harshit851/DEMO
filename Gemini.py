@@ -3,7 +3,7 @@ import google.generativeai as genai
 import pandas as pd
 
 # ===== CONFIGURATION =====
-GEMINI_API_KEY = "AIzaSyDrEDhqFP6hkwj11a-EbHO8t7ehEPvrBUQ"  # Add your Gemini API key here
+GEMINI_API_KEY = ""  # Add your Gemini API key here
 SQL_SERVER_NAME = r"Hp\SQLEXPRESS"  # Raw string for backslash
 SQL_DATABASE = "Harshit"
 ODBC_DRIVER = "ODBC Driver 17 for SQL Server"  # Ensure this driver is installed
