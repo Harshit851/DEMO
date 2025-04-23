@@ -1,0 +1,725 @@
+Customer_ID,Product,Product_Category,Units,Unit_Price,Shopping_ID
+ec0383fc-d8ac-45d6-9bb9-c0e24d19eb91,Lipstick,Beauty,1,133.16,56aff51a-f683-4aa9-bb76-e938cef2fc77
+88eaa5a3-ccd4-4a14-b463-86ea55535b4f,Comics,Books,8,205.44,3ec0a218-07cc-45f7-b392-e7e666dd1f72
+26c08fb0-4db1-44a0-8589-b9c6ea2c027f,Notebook,Stationery,8,182.23,2fefb4c2-0f0d-43a4-b27f-11475c2275a1
+a55c84de-0449-44d5-b2df-1404c332f3b9,Eyeliner,Beauty,9,73.94,fcd96ae7-1cb9-4850-be29-e7f6e85db5ae
+4d647cd4-df3c-4dc6-b265-58a53ee5f9f4,Microwave,Home Appliances,10,400.7,2d03ec23-ebf3-43f9-b905-770f4eca7cfc
+2ed47eb7-8b4b-4594-a04d-e1a63197da2e,Smartphone,Electronics,10,451.57,65c61b77-190b-404a-a1b4-70c25efe8568
+a86a6c99-e9b5-471a-9aad-4c6d9566bbf6,Dress,Clothing,2,449.92,9d2f1485-0b33-409a-9341-fdf568e77913
+ae9a2e9b-a4ef-4f88-9f3d-d064099e3f1f,Bread,Groceries,6,238.71,61b44d40-bde9-42e6-b4fc-6d5f809e3e73
+3e869b9d-4eaa-4f91-a926-f393189ce4c3,Eggs,Groceries,6,219.92,84ad4fba-d333-4845-a7d0-042f09e02404
+022c388f-4723-4494-a4bb-c7bd092568cd,Blender,Home Appliances,4,483.47,2ca5c8bd-658d-4e66-8e13-58695d5d4f3a
+b3adfccf-d62a-4a01-b1ff-72714d9092c6,Milk,Groceries,8,433.33,9c3dec84-2c0d-469e-a9fa-58a59f7e1d69
+3cad60f9-7b72-450d-b058-b40c9fce4366,Dress,Clothing,1,403.49,79b4f41f-13c1-4652-84a6-5233408aa4a5
+a3d7bbfd-04e9-41ae-96e6-7b459ec5f3b8,Refrigerator,Home Appliances,1,51.17,b58e714b-0355-4848-9c64-ca2964a5126d
+bfea718a-110a-471a-8e24-58d7651698da,Action Figure,Toys,1,307.89,569db5bf-3ae7-4db3-8cee-ff5f74af3d8d
+3386e934-307b-4e84-97bf-b068e1fe83d7,Skirt,Clothing,6,353.3,573a0323-686f-45f5-a17b-a3144a5721cb
+712869c2-613f-429a-a234-dc5103d2881d,Eraser,Stationery,4,458.92,c234791b-7043-4926-a0e5-9c3a45d6efed
+f6322b12-d548-40b3-9862-b6c8daa737c5,Dress,Clothing,4,402.66,eadc708c-b2b9-4d0f-bc68-4fdb50333b85
+f92891d9-d183-4d34-9551-9020fba370c5,Jeans,Clothing,8,50.15,9dfa72b0-79f0-469c-922a-5233c3e0bb70
+67326fe5-a96d-4e22-9793-631cb6f6fe9c,Skirt,Clothing,9,499,b4128514-0dc0-4d33-b42b-4265fc7e0634
+93ac6eda-9f95-4b02-a24d-0549709a492d2,Eraser,Stationery,5,277.88,fe8ace60-b19e-42c0-9c93-6c04fbf0ef06
+93ac6eda-9f95-4b02-a24d-0549709a492d,Eyeliner,Beauty,2,275.98,6f73e422-b884-4898-9acb-3ae127639546
+2174e5ad-e5ed-4a1d-a797-c9003c92d775,Jeans,Clothing,4,482.1,5ef2e674-692b-467e-855d-166f870ec1bd
+85abb968-c34d-4bb9-b5e6-f7ffeac0eb58,T-Shirt,Clothing,9,295.87,f5f40ce8-56d7-441c-916c-45b3ba59cba8
+8b66d5eb-caf7-4d55-be7b-794e34094ed2,Air Conditioner,Home Appliances,10,399.98,0d1b74a0-e71a-4e27-a96d-8b1574d276e6
+a30b0218-c522-4559-adcb-728f83b913f1,Board Game,Toys,10,124.84,590783d3-4c38-47c7-b06d-9dd20b8ad994
+cdccbe82-4e82-4868-ba3f-4fc84b6ad4aa,Air Conditioner,Home Appliances,4,411.63,5c218a61-575c-473b-890b-ef95ae1275bc
+0a5eb05b-c4eb-4179-81ad-cfa291378521,Notebook,Stationery,10,490.74,58e1e647-9967-4c52-a2ba-80ccbd80979f
+18845896-b5f5-40e2-9e4f-9bdf1b4ca3f5,Smartphone,Electronics,2,49.46,9643c038-3a65-4266-8bc3-eea2ff46ecc7
+f2252553-0e47-40be-8be5-68d5305fdcd4,Bread,Groceries,3,462.07,52332e6d-0c6e-4d37-88c1-5e28f316856d
+2bd563a6-f896-433a-8606-f9322a0becfe,Puzzle,Toys,9,343.33,6e004469-1a00-4a40-919d-ac51bbc006f6
+b32a02a4-39a5-4b51-93e5-939767baa77a,Notebook,Stationery,9,406.76,0f471585-505f-4533-9d3e-d41676a05ecb
+279b0326-8429-4382-86f7-3e63c002ce9e,Notebook,Stationery,10,413.51,8863f219-0b3e-425f-afba-8416add0dc87
+78c85ff8-46a1-4415-a570-cd8a7c5f983b,Headphones,Electronics,10,141.23,9be6b97d-c635-4ca5-b9c9-756fa396e071
+a040effd-8555-4386-b7ba-2605d78e26ce,Notebook,Stationery,6,45.77,594f7fc1-73a1-49a4-97db-182da7d55d45
+bf903836-d212-4efc-ac70-a7e0ad1250ba,Laptop,Electronics,2,245.79,8d183951-4b1f-4ef1-be14-12e2c23fea36
+be146aab-f28d-4b8f-8d0f-a06c47bde6eb,Moisturizer,Beauty,4,13.02,1a01972c-d22b-4390-be5f-c7e2d1a38626
+55bd856a-7063-4029-8894-34b88abd7dee,Pen,Stationery,2,354.14,a9ddc01a-5628-4af5-9293-f2e5f53f1539
+0155e4b8-2cca-429e-81b0-16f87feda9b8,Highlighter,Stationery,3,169.61,aaa6430b-2d41-4cbd-bac9-0a5e6cfc5a23
+5cc1fc84-e33b-4455-b6f7-5c110bdeb4d8,Sticky Notes,Stationery,3,428.38,5f38ede1-09dc-4e57-ae86-3a897720ed30
+42f8971c-554d-415c-af75-5b1c214b88ba,Tablet,Electronics,10,318.93,d1a934e0-f364-4a77-83ca-8ba59208ff61
+3346bd8d-822b-4fb6-93ba-f922360f050a,Eraser,Stationery,10,341.89,208751cb-f717-4dfe-b6d6-0a5a068d2f53
+901e83c5-e243-43c6-83fe-18372a568692,Smartwatch,Electronics,4,305.14,322986a3-1073-4e90-be54-4ee39cce8b51
+1ba7c4ac-dbca-471d-b2d1-8cb3beaf3a25,Science Journal,Books,7,50.31,dcec160b-54d2-47ef-858a-b1376dd8f944
+977153d1-b80e-4f8c-b4af-01375b4a722a,Tablet,Electronics,1,304.72,497d0a57-795b-4558-b7bb-41c5565b1c34
+480dd8d9-0a6c-43b6-9a52-36700f322ed2,Jacket,Clothing,3,360.47,8d2808cf-e5be-49a3-8fb5-cdd3951c33ac
+10f57980-afa7-4c0b-bc46-07ba4d81d26d,Laptop,Electronics,4,364.94,bb6e9c41-6918-425e-b4a0-e58175202e74
+a2707d13-c97c-4369-bca9-45b0377fad2f,Air Conditioner,Home Appliances,1,274.4,2567c913-79bc-4af3-8b3a-ef28b6fcc016
+8d03949b-5827-4741-bfb3-def447b36bec,Notebook,Stationery,5,39.65,7e89c2c2-e3fd-4714-b10f-790733cd6009
+fa2ee276-9133-4dd3-ac68-77b2c8c32e69,Action Figure,Toys,5,178.4,523b7ed9-6aad-450a-a49e-6c17eb36dad9
+c2d16a95-f5ea-4fbb-b4f9-5021c69c2dea,Shampoo,Beauty,1,254.3,7c1905f0-5f6c-4bc0-be1c-c75545542188
+d7c8a026-488f-42b9-8deb-efcf87038ad6,Foundation,Beauty,10,54.96,47560e2d-3328-4ee7-9d2f-d827923904a2
+4afea45c-7453-4c12-bca0-d973bfff2c0e,Puzzle,Toys,4,133.77,a72c3020-b362-4928-8144-b14a0f61a031
+8147ba45-4b66-482e-a499-faa75aa7a3d2,Eraser,Stationery,3,350.36,97b5e5b8-0f75-459c-bae8-c50e2392d578
+95c8bce6-36f1-46ed-a8e8-6f9f1f70a04e,Biography,Books,1,395.38,a27e1b25-0126-45b7-8305-08fea4a6082a
+f0ad336d-007c-41da-afa7-93091ee27891,Milk,Groceries,3,174.44,1a4523d0-597c-4b94-b315-c26e405f7889
+d673f441-37f6-4a00-a390-9fd7c1cda98c,Biography,Books,2,300.41,1cc22875-50d8-4b1f-b890-b3713d9c24a3
+20eaeb90-1809-469a-83e0-4808eb5d5e03,Apples,Groceries,3,11.54,2e5725b8-7310-4567-a67d-40b665c67574
+7e91aed4-52d1-4a0e-b996-64742e13406a,Washing Machine,Home Appliances,7,450.55,598528b6-fe3d-4b0b-ad5f-31c00e383b5b
+26dcc69e-5532-47b4-8ebe-0993c2a0cf3b,Washing Machine,Home Appliances,5,326.22,f34a9633-547a-40b9-a256-47fbaa93e738
+4f3fa6cb-8d04-4a87-9c7c-53c0f6ee7e62,Smartwatch,Electronics,5,80.94,4e891046-db45-490d-bc32-e266d32776f3
+844421f7-8b6d-4c0d-b496-f8ba06ea0ba6,Moisturizer,Beauty,2,171.28,bc41b993-a1da-4157-adf5-9dc202a50749
+06f0fa2a-d5eb-4470-98a6-7978e5a962e2,Sweater,Clothing,5,71.74,2cc9c82d-2156-4efd-9acd-63715f483ced
+83088f42-49f5-4cb2-8dae-c2d807badf56,Sticky Notes,Stationery,10,147.5,c5e20849-c8fe-49ec-88d8-f7c07e90d08a
+095c5048-8d76-4b0a-ab75-6c9380d24e4b,Moisturizer,Beauty,10,473.72,dca11661-776d-4de0-a64a-eaa28c343756
+dbb14d67-13ec-4a9e-9572-067742b1d0dd,T-Shirt,Clothing,10,70.51,c20ded4b-30bc-4918-ab5a-964883b0a7f1
+e37d186f-7c37-4773-ba8e-fd01da5945d6,Eggs,Groceries,7,375.5,415c36ec-1cb1-4964-9fdf-340404d0ced2
+86f05e19-23c8-4a77-82dc-e7c1047e3cb1,Highlighter,Stationery,10,100.19,84059ca5-7138-4c55-b4c0-5c40018a30b3
+c9be472f-dd6c-43a5-8e7f-4798f33ae8c6,Blender,Home Appliances,4,115.43,3f69e694-1feb-4cca-879b-137b3e5cb009
+b1d7c3c8-4cf5-4348-8087-726ae91ece1c,Sweater,Clothing,7,356.62,5e27aa50-d268-41c2-9303-7e5c95b2a6c3
+b34ab5ae-75d5-4bbc-ad1b-f26f6fc0014f,Bluetooth Speaker,Electronics,10,437.9,111d169a-1ddd-4436-8cab-7d4e5d43880a
+55b101ad-e9ce-4a04-a106-ee5fcdfaed3e,T-Shirt,Clothing,10,212.02,b0ebb7cf-586a-4d36-a644-7e26997fbb21
+8e575842-15e6-4a8a-b3a6-25a272e5e923,Bread,Groceries,8,36.62,199eed30-9cdd-4be1-8983-26aa09a62aa8
+2c3bab41-7af8-4f5f-af36-1d743ee08697,Smartphone,Electronics,9,443.05,0590555f-99c3-4552-8dbb-e83a4628eaa3
+0caf77b0-85f0-4bbb-b2d1-5712fbdc612b,Dress,Clothing,10,378.96,c62eb1f1-1cd4-48c2-9da4-fd87f37addc8
+ac99ef1f-bedd-4b5d-960c-f486c3b666b2,Sticky Notes,Stationery,6,159.47,27e70f3c-4e6a-47f2-a4e9-79132501ae83
+6c4e22ca-dd88-4fc9-8bdf-4d5e4f5fbe50,Rice,Groceries,7,98.06,c301b495-898b-4cf6-b5bd-d898c173cae6
+df4d894b-c55f-484d-b442-d3a02a206c18,Microwave,Home Appliances,2,419.54,238eedf9-9c67-4c6a-bee2-697138423022
+a84825f2-df78-4bd8-8058-b1c4b08e271b,Rice,Groceries,1,203.9,67d88c98-13ca-4e4a-a873-26fd0e588b85
+e6eebd06-a308-4c28-8541-708e4d29c229,Jeans,Clothing,7,161.51,717f0032-5351-43e1-a95b-8464b7590043
+c02fed8c-9133-4d6b-b4e3-c18d6c09e24a,Milk,Groceries,1,490.22,71b291af-b497-467a-832c-92ccb0111c1f
+40aec160-b60f-41f4-b204-43d951998f6d,Eyeliner,Beauty,9,307.97,12386cdf-e491-46eb-a386-7ad2e3326849
+282b0113-651e-401d-9720-13792a6105a5,Biography,Books,10,326.39,9d928a15-a9e6-45af-a44a-685f82f2c0a5
+00c30e39-7fea-4417-bd36-3bafb6df2ed9,T-Shirt,Clothing,5,345.83,ff2b84fe-ed6f-4d79-ab11-19d1f7965ea6
+3d6fea22-906b-4b29-9ad7-ec1d1daf9fde,Chicken,Groceries,8,427.7,06d4fe28-2657-4d16-b4be-44ca379a28e2
+33aa19c0-9c1d-4169-845e-6ca14cd6c2af,Lipstick,Beauty,2,15.81,bf04bd68-aca4-4655-8659-3fce9514be4c
+1de6487c-037f-4f8b-8145-33e3acaaef23,Lipstick,Beauty,5,71.04,0edc0279-d09c-4e64-ad36-4ebe974202d5
+c535e120-907a-4219-b363-e395c88e7006,Highlighter,Stationery,6,61.98,35088274-3bcd-4622-a528-c315da3e7eeb
+fdd932aa-12ec-497f-bc0c-ac228723db82,Biography,Books,5,426.36,d66054c6-f3c5-4c70-bb53-44ef31aef8d6
+07f8a5cb-dd66-40f7-8f20-b0c0e23bcd55,Eggs,Groceries,1,106.84,3be2cdcc-3125-4f30-8b87-f2bac0b78aa6
+48f5f122-7fab-4467-bb46-efcf425e604b,T-Shirt,Clothing,6,473.52,96387df4-2ab8-4881-a759-a6faf573d44d
+e6a4679f-0492-42ac-9761-9d4413a428c4,Blender,Home Appliances,1,423.95,b27d3e40-1e3a-48eb-bd5f-4fc002387080
+85cbd3bb-8594-4230-b676-999fe9ff0866,Laptop,Electronics,10,329.4,6b7a7ac4-3273-4c2e-8f33-ec4310916bc1
+7ea42b2e-2eec-4123-b993-d528d8ac1f4c,Board Game,Toys,7,189.36,9a5fcb21-6528-4196-ad85-c799a5e7d50f
+d8dd90ce-079a-45fa-a406-735c648ef857,Pen,Stationery,3,107.88,ced9ced3-7409-4fe1-bf95-7bd5c7aca2a4
+1b2e7848-d666-4644-ac68-faf3e4905bb2,Textbook,Books,5,9.4,6a878157-67b5-4119-b62e-d68d797b0922
+5c3aa6b0-a44f-49a7-91f0-ee2183d9b313,Textbook,Books,5,170.04,f0a9a298-fb8b-4b9e-8e75-6e379c821820
+43afb88f-a1dd-4d31-8d52-108773cbe601,Highlighter,Stationery,2,172.44,e1e0f560-4140-4aa5-907a-2260aef294ad
+a483a060-c1c1-474e-aebb-0020c5f10216,Chicken,Groceries,1,25.4,4c002618-5475-4186-bc4a-cc9340cb3c0c
+b169822c-b0f7-4c42-95da-79acf42cda65,Lego Set,Toys,3,491.05,79ca77b5-ebb5-44fd-8ca4-704396fa4207
+94fd75d8-97e6-4398-bea1-2bac4fb62b38,Bluetooth Speaker,Electronics,7,494.7,262a18b2-2b4e-448e-bb24-328cfcc30c5d
+4f5e74bb-4a11-4d31-a8c1-ca6359510c6b,Chicken,Groceries,5,61.87,65ae0d94-1766-4d1e-b3cb-953f1643313d
+a5b9ba93-33ba-473b-8e6c-91f2abb88cf2,T-Shirt,Clothing,4,467.21,20ad8491-56cd-4a60-bd02-f8fa693d940d
+11174211-a3fe-452f-bc85-6dce79ac4988,Smartphone,Electronics,9,365.69,b9724c55-b215-441e-991f-73516e46c23f
+6e276832-ef61-46bc-978b-154797b19889,Jacket,Clothing,7,418.6,4b39d08e-21a8-4bbb-acae-dae8fd5a35be
+c940e63d-477f-4293-bef5-beb89eede96c,Smartphone,Electronics,7,58.78,31691f69-b080-4469-91d0-c5e4d85d8f51
+840a89c9-42d6-4b80-840b-d088c4fcd801,Dress,Clothing,8,171.85,b2f55c4b-6b95-40d4-9257-aa8c9c9c1da2
+2aa23a71-09f6-4016-af8b-7b45408f7307,Smartphone,Electronics,2,242.15,64b96202-9e24-4b8f-b48f-6d7454c47336
+6d6eaf99-6eff-4b70-b7e8-39d6c799832a,Blender,Home Appliances,8,216.13,6ee34984-8251-4d65-971c-2eff1815de96
+029d647d-cc83-4e11-bc96-1eb0b9c45a40,Smartphone,Electronics,6,368.7,3ac184fb-0b2b-498f-87c8-f6c832798b87
+5d5d5d66-bbef-4737-8ffa-217f7ea273a6,T-Shirt,Clothing,3,315.24,a7d0c609-f592-401f-91b5-029d16b5581e
+1bf81d4c-e1c8-4934-a6ac-8b1961c57215,Eggs,Groceries,2,37.59,5ce9cdb8-9903-4afc-9a03-cf26f8931b2d
+a7f0187f-6089-4270-8320-98e24ed2f24f,T-Shirt,Clothing,4,376.19,36f8b191-a0ad-48e7-9bc5-aaf11d2bb419
+371ad705-839c-4328-aa2e-b357f44bcd4d,Smartphone,Electronics,7,8.89,66b77cb1-c2fa-4d91-b7a2-e27bb0fd11ec
+649073bf-8184-49f5-94d8-6f3b2ad7c3c9,Jeans,Clothing,9,261.91,bb354a40-f94e-4b83-8b39-408823af04ba
+e5fd4f7f-3803-4ce3-ae85-7823e7b344e1,Chicken,Groceries,10,358.63,65a11148-4c7a-45b0-a468-b69f1e323bc3
+d2e0f791-44df-4439-ad1d-d55742965616,Pen,Stationery,7,46.41,39a1aa67-52e9-49b5-a73c-aaaf89831bf9
+d08c08ba-004e-4dab-b43a-e179550bbc57,Puzzle,Toys,5,294.69,fcfe9c69-7d29-471e-9408-bfa95db8e3a4
+83243646-c0b0-403c-90f5-dd1e486b9055,Apples,Groceries,7,100.01,d5fe4cec-b8a9-4b27-92d1-c7649260f577
+7bfb20f4-fe72-4bb9-8f00-166695164f9d,Eraser,Stationery,1,451.99,cd1997eb-5769-4996-b52b-1a63108802cf
+0a7bc549-ea40-4e6e-977a-8436b669bbdc,Fiction Novel,Books,4,63.86,d2f9b4bc-54d2-4b21-afda-639c62e379ba
+1c98754b-330c-40f1-8947-4de77084c15d,Lipstick,Beauty,5,107.58,40b296bb-69f5-4fee-a43c-71dcf2a69840
+672469e1-3ab3-4e28-993e-47d380c7e6a7,Board Game,Toys,4,313.59,f5e2d5b9-fd37-4735-abf0-088a4dd97d58
+c0c68cf4-42f1-4f5f-8f12-31a3ff71b151,Chicken,Groceries,4,231.91,deaf9c6e-dbf4-4819-b3f7-12dcb2faae91
+2ed2f4a2-def2-4639-963c-5105717335ca,Lego Set,Toys,3,56.85,89724eab-f376-4a9e-ab7a-2521deef83be
+c11913dc-251e-4201-985e-1966792a3c5c,Sticky Notes,Stationery,8,78.46,5cd85e30-ca01-4f42-a776-84d5b05d5dde
+3e3959a9-cdbf-460a-afc6-c065969b85f9,Bluetooth Speaker,Electronics,7,439.44,9fdcb2bb-24e2-422b-9917-02190ad58a07
+806ae88b-97d6-4960-9440-957d53967839,Skirt,Clothing,6,417.6,95369ed9-bdbe-4893-8aff-4b54f460aece
+a622775d-fe7c-49fd-83ea-91e5cfe8b983,Notebook,Stationery,4,273.69,1c078276-4655-41c1-b5ab-833647af6a8d
+ac5444c3-675c-4099-a831-37b23a7bc798,Smartwatch,Electronics,1,173.41,1113b0a7-5a3d-4b3c-9e5a-38e9efc6f4d8
+f1126333-f933-4821-9af4-c92e83351e7c,Comics,Books,6,409.97,e8de4931-d4db-4f1d-8330-25b1c8eb57ed
+abf9bef6-9a69-47f0-892b-d2697e20d070,Fiction Novel,Books,3,437.87,d3bdb74a-9773-4162-8ee2-c4b026641236
+40044dba-9e37-4f11-aff2-1fb094653633,Eyeliner,Beauty,7,293.56,ce4905b4-4dd1-48fa-9e0d-4026716bade7
+263b74cc-dc2e-4993-9a5b-809cb96bae22,Science Journal,Books,8,37.85,8b491366-bdc5-463b-b3bc-23950714a838
+1e91f850-7a94-40ad-b09e-b8d920570d38,Apples,Groceries,9,435.1,bb756fed-783c-494c-b6f6-cf293e4ceee5
+b9e743d8-4e82-4391-9aee-853ea947489b,Sticky Notes,Stationery,2,116.42,be51a549-7591-47b9-99ec-f3fd854634f7
+59ee60ec-eda5-4861-ab00-69cee40b6ef4,Skirt,Clothing,5,12.57,3115f982-82f9-4f84-89ac-eae7ec629693
+a9e5fec8-1919-48e6-b586-ebcde3fcdec0,Shampoo,Beauty,3,401.32,50a481b2-1a29-40b8-9b88-1e028e9d7e6d
+f04b29a0-f7cd-47d3-90fd-5ce36cae2b6d,Textbook,Books,8,484.46,c8525fa8-e622-4910-ab18-2a46940d981e
+cc2b033a-3fb9-49ea-bdc2-57cedc12cec1,Laptop,Electronics,7,451.04,4894a684-c668-46bd-bb41-7f4a1375d143
+447a4c89-eb40-4542-bd84-2b902fa2436d,Bluetooth Speaker,Electronics,1,289.07,df6384ba-c326-4723-a3b2-bf3025063803
+4f71e359-d57d-4321-8935-d8195a5e18fc,Highlighter,Stationery,2,374.75,0d3c5da3-55d4-4bd2-aa0b-a24a48d2d9c1
+b003e94c-70c1-494c-9d3a-cd568598024a,Textbook,Books,5,270.03,d05a21e6-8ec1-4532-92a6-3a97acdb71d8
+94f5fcf7-0130-4ced-ba5a-f92a9b02ecf0,Moisturizer,Beauty,7,413.72,39a4fe37-6667-435c-874c-0faa25e3b096
+c11e732b-3f67-4e83-8cf1-a7026a2a33ac,Air Conditioner,Home Appliances,7,305.68,f779c5c4-2097-4ab1-b5c2-f57eb2269d04
+62f904b4-665e-41f0-821b-7d03514312d9,Science Journal,Books,1,330.21,780a6d93-119c-4e90-891b-305bdc345349
+51471302-b32c-4c4a-8b21-552c0d7e51c8,Washing Machine,Home Appliances,3,154.71,b96b98ae-174e-4c7c-bd87-7941ec0e58e2
+d8c80f8a-4af9-4ab6-89d8-77fde98779db,Smartwatch,Electronics,6,37.48,374c6c03-d0a8-4e5f-9d56-ddae1f872133
+967ad665-a456-40f2-964e-6ae684d46a03,Puzzle,Toys,5,387.38,a8b977db-74c6-41f9-900f-e122a82b5049
+187d6195-dcd4-4ef3-bf9f-b509b33937fd,Apples,Groceries,7,35.82,4dd96d14-9da8-4cd6-867f-2dc284bd8b4a
+cf0caae0-5cbb-41a4-a495-6068a6a9f1f5,Shampoo,Beauty,3,123.28,f5491088-fc72-4104-99aa-1d7f62eaf971
+6645f5dd-dc55-4aa5-b551-8092f11a3ea3,Board Game,Toys,6,32.49,b65b87cd-79af-451c-9407-1ca7ca302223
+fc5e2eff-62a1-40ee-89e9-f264e2d37738,Milk,Groceries,7,74.75,842e4ec4-34b4-43b6-97eb-ec4a1239b65d
+a4c33373-ff04-4958-b64b-c9b2bf268fe9,Eyeliner,Beauty,2,338.4,2f0bad3c-3cf1-4aa2-8e32-a8b0994fa4d7
+051f8efb-0544-4179-b502-b7b12b58f8ad,Skirt,Clothing,6,208.51,e7c12c62-d07a-4df8-b943-acffcf96a510
+0568ec51-12b8-4e12-9441-721bd9ad40d8,Action Figure,Toys,8,196.41,d540f6e5-1705-447a-a9c0-bfd8de217205
+d8b3e0e7-11b8-4f39-9c06-4ca604fe2c74,Sweater,Clothing,2,238.09,02f76fcb-db9d-4734-a8fd-af877257cd6b
+177fdedf-f2c5-4f47-9fe3-f96a30002680,Air Conditioner,Home Appliances,1,21.07,afe5d0de-cca4-425c-ad07-cfa5c5300a30
+7ddd634a-1e11-419b-8429-8f2ee94a4c14,Comics,Books,6,57.12,e822a278-b190-49c8-9b3b-5a1a1720e8c2
+1f4daa9d-5e76-479f-bf4d-fdc578da2393,Notebook,Stationery,6,101.51,06158bd3-9835-494b-85f9-e749a257850a
+fbd7655b-4c3c-472b-9441-120dafbc37b0,Fiction Novel,Books,2,441.23,dc545cec-c838-479c-ba34-3112a857e049
+8c52a3ec-a861-4437-909c-5cba241cbd78,Action Figure,Toys,8,309.09,33d1a117-1ede-46a3-998a-1b48d4f4a84b
+5bfdae72-b6aa-44e9-adea-4360b5d60454,Microwave,Home Appliances,2,484.9,8700d290-6de8-4556-8b79-4e4aedb74fc9
+7cd4f9ba-546a-41e8-9332-62f37c6b504d,Foundation,Beauty,3,479.44,2271b23b-8bf5-4d0d-a9dc-9e48ddc94e53
+8b91e819-b2da-410f-b214-d3c78f6fc538,Air Conditioner,Home Appliances,5,458.86,73aaa4b0-0795-4d77-ab5c-d5a18f0b3e5b
+9bf5136c-dd1e-4f58-9d26-520de57b9c3e,Fiction Novel,Books,2,261.91,e307b1ae-bfff-4781-99b8-2ae557aca059
+2d0331ff-2b4e-4339-88f4-b540f21becb4,Eraser,Stationery,1,392.15,ad508501-85f9-47d9-a70a-c0aa489eef69
+97588bac-5180-43fb-95b2-b8eb3d8fad22,Comics,Books,6,379.53,2e77c988-0664-4964-937f-2580028e0737
+d2203f09-ecca-4e26-b1db-01aa265418b9,Sweater,Clothing,2,478.47,c97925e5-8ca2-4290-922f-655828e798b6
+b39e18d1-74b0-4cb5-b5c5-311bdacad719,Dress,Clothing,8,131.42,6587c8b9-420e-4eb8-a131-c05fe6ca574c
+9073f6fe-69f3-4973-9c05-7291fcd8e8d9,Textbook,Books,9,334.92,f8472818-f938-406c-9378-c8fd770e87b7
+5e1d0345-5020-4c98-a0dc-34bc01ff1845,Moisturizer,Beauty,4,118.68,9a9438d8-d11e-4bad-b8ef-d062f1a849a8
+0d2166bd-e0d6-4c7d-965b-ba527cec0a9c,Blender,Home Appliances,9,212.96,8ef1bcd8-14b5-4281-8933-fe35fb102ce4
+1333a48b-8505-4d3b-a98a-23fe2ae32eb9,Fiction Novel,Books,2,77.12,48ab1b11-fc3c-47d2-b454-e8daf635dd00
+a3d1a525-214d-4e80-b5ac-84146a1e5568,Highlighter,Stationery,7,461.83,808b466b-1946-4231-96f8-0b924c99259f
+714812ba-bbc2-42b3-a0bb-b5dd185fa8f6,Comics,Books,7,36.15,ae76c823-e10f-4abe-a307-d0f136e03455
+25fb2436-93e5-41a4-b694-58f9e540593e,Doll,Toys,3,368.47,1fb10c11-dec4-4114-aea1-09a4b35e3c61
+539d972b-cf60-46dc-8f44-c48a97d13fa8,Board Game,Toys,7,344.78,40422739-b0fb-4c22-a9cd-6b7720d0b942
+4f70ace9-7316-4a2b-b60d-d303e0e6b96f,Milk,Groceries,6,362.66,d1165061-fb65-42da-a3ba-683bee017b3d
+2a75c92d-8801-477c-872e-6da33413f7d7,Moisturizer,Beauty,2,65.08,68bda45b-5990-4c64-ae6c-6bcd17aab8f0
+a4da6294-05aa-4324-8ac8-8d8b6fea6ea8,Washing Machine,Home Appliances,6,93.06,c99bf16f-8362-41e6-acad-bb1222bee152
+eb88b925-c22b-4450-bcc6-d2b22057af97,Dress,Clothing,2,300.31,f6388c32-410b-4c4d-b55e-a4f0f65d9731
+0e93eca6-d6cb-4b56-8df3-f415d26441f4,Pen,Stationery,4,6.6,008faf16-5265-411e-ab2b-424f8d901ff9
+b7ce3a4f-f1e8-4195-a02f-6f1ad2d189bf,T-Shirt,Clothing,1,150.17,ac47a946-d085-4a3d-be25-27d8909d03d4
+daccdbac-f53e-4d41-9289-c4b12fccdf77,Jeans,Clothing,4,430.29,1f7ee134-3fdb-4afa-84e5-701c0470afa9
+745236e6-ef28-4474-9445-d1caad6f305f,Biography,Books,2,240.96,57fd0c09-5bfe-4ea3-a8d0-956def7c1ca0
+25c8b679-eaf9-4b8b-bf15-508309a2658e,Fiction Novel,Books,5,69.43,cbc744fd-cf31-41bf-90c1-8efa6ab03716
+79bcf696-f704-4960-bb65-e93d45fc1f49,Foundation,Beauty,6,239.32,b70403ad-8839-42a5-b9f2-08d41741955a
+c1af32cd-ae62-466a-aa8b-0c3c7768f909,Sticky Notes,Stationery,5,468.88,4b424a73-834d-4490-9033-88117493d8bd
+f3bed455-e6de-4380-81dc-0ad099831955,Shampoo,Beauty,6,96.1,d1dba34d-c316-4245-a49b-915e1f7252e1
+d7ae0651-5e7d-406e-a7e7-615e3b00db8f,Fiction Novel,Books,2,268.95,2fb40cd9-9a24-4c85-a8a0-dda4525a26e8
+fa21f5fd-bfd2-4c5a-8adf-6a44aab571f0,Dress,Clothing,3,191.41,7ed64b44-cf87-4d88-b43e-fc6bc06d661a
+759f23e2-00f0-4400-bf8e-eb16ad1621e0,Fiction Novel,Books,3,403.17,54f5d8e3-10ff-464d-90ca-bfc91f9bdfb2
+ccc66c60-1dfd-4b4f-99e2-8c5668d6f17f,Headphones,Electronics,9,125.21,4dcd4e0c-c5c8-4e31-b706-f77cff19e953
+c3a12c53-5753-44a5-a69e-f9490978dc01,Lego Set,Toys,6,212.79,2c97cedb-bbdb-45d1-856f-51b16e60490f
+a4ac0d03-fcd1-4706-9043-1479fb2c3af2,Smartwatch,Electronics,3,302.6,dc92609f-352e-4875-9ec1-863e6ae2bf96
+829cfbf8-3f56-4d83-a8f8-c201c2388487,Eggs,Groceries,2,70.35,b60e6bc6-49b1-4cf7-9a9c-fd665f432163
+22307412-ec12-4ad7-8ae3-a29b248f5e5a,Jacket,Clothing,9,211.29,7d1b7bb1-de94-47f1-844b-4d05f2f8ea63
+40ce0c4b-bca0-4eaf-a1e0-1771d22941b8,Jacket,Clothing,10,213.98,08ad773c-19ea-491d-9a91-52b8fde24c42
+ea84617e-310f-4850-aead-32f01e0e30a6,Refrigerator,Home Appliances,6,46.86,81727a58-9ad5-4cc8-9c2d-42b3c9cb9861
+d4ab17b9-d7bc-4553-8639-3fc91cb242c1,Highlighter,Stationery,6,320.34,21527ae3-262c-49b6-b67c-6f02844f60c4
+f05d232c-2a59-4105-809e-47c8bda8c0c7,Board Game,Toys,1,191.33,388fbd3a-1be6-451d-b4ea-e8a4872be36e
+e025be7d-c5d2-4d00-a1d6-c993864764c2,T-Shirt,Clothing,7,481.17,1ea86ae1-fd0b-4464-9784-3c69ef41ff30
+b2740cc2-72ee-454a-95bd-b5f35a644c8c,Doll,Toys,8,105.98,45676d78-f261-4ad6-9eab-66015355d12d
+09e02698-d905-4818-840f-22b02d7d35c4,Refrigerator,Home Appliances,2,475.38,80f4cb56-b15e-4db3-a6cf-6667d703e766
+a5716aaf-a07c-4beb-99ea-33c7b9b39707,Textbook,Books,5,60.52,39165771-559f-41a2-b393-aec43290f696
+2de00eb6-f99a-4b51-8ba7-35d5b582f677,Blender,Home Appliances,3,398.85,cc06d282-6b1f-45d7-aaee-f5e68e1aaeee
+2e997903-1b53-4529-acbe-bb9078336f98,Board Game,Toys,3,384.98,44add649-60d7-41da-905b-c912b5963f7c
+2b578f2e-e2e1-4380-81c1-8df6f6c5c122,Jeans,Clothing,3,127.74,1626c4d8-9325-4e54-b15f-a638aa8e5502
+1970701b-cf2f-4ea4-a218-0c73a25ecd08,Blender,Home Appliances,6,468.87,8acf056b-9be9-404e-ac76-b809424395c6
+6fec1360-fff0-4982-8084-8b79adf5a84c,Comics,Books,6,233.91,159132d6-1c27-4653-a2b2-bbbc9272daa7
+6fa7bfc3-9977-4392-b8b4-71247fce6011,Chicken,Groceries,4,150.89,7b9318c2-3baa-490d-9637-4a1d43e268e7
+6750dd34-985c-417c-9d21-eb9d1a214070,Eyeliner,Beauty,8,8.85,0bb10854-2567-4715-8378-03d9f5ae2230
+1aabc3c6-1103-4ed5-aeca-5acaadbc166f,Refrigerator,Home Appliances,2,385.47,b1aee00c-cdb0-45ef-9ca6-b9962c6c4c76
+0b7c4271-02d0-4485-8eff-c094a804bf57,Eyeliner,Beauty,5,274.88,40b64869-eafb-4635-91a7-08ef704e5255
+5daac158-23fa-44ee-b2a8-42005aa133f6,Shampoo,Beauty,7,354.62,d8a9849f-75fb-47e5-8ba5-33d4d581a351
+bdfe460f-664b-4ae1-99fe-cb4b3ffd7525,Dress,Clothing,8,381.24,617af2d7-06d7-4fb6-9acc-7fe1a51421eb
+01fad946-cd00-4859-9190-697d38071cf9,Highlighter,Stationery,9,382.19,4b66c503-1bce-4b54-b868-d550a6481d28
+5df0ba74-4a41-49d7-9487-7bed2c1755e4,Skirt,Clothing,1,64.81,d2c7b3ca-f802-4343-8318-bffe135ed6c5
+f1cb3241-3343-4a6f-a8d4-ebee0fe486f3,Blender,Home Appliances,1,5.13,7718cc66-873a-4a63-a9b7-7c388742772c
+30ea39fd-ed80-43c9-bda8-e98474a1c2b8,Jeans,Clothing,10,356.43,6b3a4996-4f28-4674-ba87-b33fa9f3bd9e
+2d6fa26f-f48f-49db-9793-799a93344817,Sticky Notes,Stationery,2,374.54,7dc9fde3-a84b-40fc-8a9f-be0a17ea7041
+4d2f6f85-278a-47db-a490-1157843b9945,Milk,Groceries,5,436.29,9edfede1-e998-429b-88f9-ebfd958143bf
+1c2dc900-7705-4e8e-aa1f-f18fe3de0a32,Pen,Stationery,4,299.73,a5e15a23-3f7e-4cc4-9945-5e2c5b20a663
+aaf445a2-95c3-44b1-be45-93d14f4ca991,Puzzle,Toys,5,156.27,7b0525be-f700-4de1-ba5a-fb07c6801eab
+e58412ae-0b77-4f14-8cd1-9c2b51d28ea5,Textbook,Books,9,430.43,c26e52bc-9cd9-4daa-bd20-eeff2709d8d8
+f6e97829-da8c-4dbd-92c2-76a7e94cd7ba,Microwave,Home Appliances,2,210.34,5bfa42fe-1763-4302-81d6-14350d598cde
+56ba7d9a-20b0-4662-93ad-7d791917e3b6,Smartphone,Electronics,5,262.32,9e77b183-2cb8-4a48-bb9b-2e0d7ef10aac
+28cd1214-ae02-4be6-aa0b-2f73eecfcab2,Apples,Groceries,4,268.03,d39b3de9-bd50-44b8-afeb-b6ba03a42b02
+a837daeb-dde2-4954-b2f0-71cc75f7a2e3,Smartwatch,Electronics,9,204.69,692e01f6-395e-4c36-ace5-a51f435c6e12
+ba76e732-3f46-426e-861a-ed9b5d2f51ea,Headphones,Electronics,5,223.97,2fc2ea32-6a69-44ab-ba3f-491c869f15b3
+3b625a6c-b0df-486f-ac4a-13de9e7744ec,Foundation,Beauty,3,82.75,7be7721b-15b8-48cc-b7a8-f300f1e6c3a8
+31873602-969b-46cb-b39c-a96bc1b42ad7,T-Shirt,Clothing,2,193.81,fb2ed206-ad4a-43b9-b5b9-df60d711f0ea
+9e0643b7-ad66-4263-ab40-2d730704fb52,Sweater,Clothing,3,282.01,4f5dba3c-fd78-46e1-9c76-c9833b01db2a
+2e347086-62cc-4910-9c00-2fce4a4a9a3a,Lipstick,Beauty,6,317.9,0a2c1468-c4ab-459e-921f-771949ad05b0
+8aceacde-9268-4eaa-8a36-6171f582e1a7,Puzzle,Toys,7,112.91,62bb24ca-2ff8-40f2-9744-44626716e4e0
+62722fcd-dad3-4e25-abb0-5ffba9ac1305,Jacket,Clothing,9,162.53,d7ac28a2-b532-4462-be52-d438d155cb6e
+d3d67523-1cee-4999-80b9-7de23ade374c,Tablet,Electronics,1,224.77,39d31736-76e7-4817-ae85-a76dfa894c76
+253590c8-e040-401e-8a81-53f2c36e9f69,Milk,Groceries,8,30.94,892eda85-c850-45f2-9c8f-bf77c6427c30
+b24f3648-6fe3-474a-bb6f-c62837bf6486,Notebook,Stationery,4,17.65,a3f98c0a-938f-4a1e-b0b0-22aa501b5db6
+b663f235-144c-40ab-ae8e-34256f4a8add,Bluetooth Speaker,Electronics,1,423.88,32858c01-7fab-498f-9d83-3dc465d6e8be
+b0da4ef3-c6dd-4de4-88b1-40f5799321e9,Biography,Books,2,344.72,6ccae7cb-2a58-44f6-bc6c-98dab7592cd9
+d681d616-6080-4c63-93d4-fc4f1375fbcf,T-Shirt,Clothing,7,8.18,585bd263-9531-4f66-a6b3-0a81727f3733
+b8100206-b28d-47a2-b78b-0e849cd263de,Moisturizer,Beauty,2,312.33,48256439-97e6-442b-b782-3c7e410a98c9
+ef67e668-15ca-42f7-8e72-755392ad6085,Eyeliner,Beauty,5,364.91,83e29d7c-9b21-4aea-a5e5-8afed3f93f23
+b814c5c4-d62e-4d59-ab7e-570b640e017c,Eyeliner,Beauty,3,377.05,6f355e95-e830-4a20-8eec-495f790e9ee6
+d653db99-1bcd-4229-a336-c614ba1979ae,Chicken,Groceries,4,57.2,873b79e1-d955-454e-a2a3-f8d2b28d0a8b
+ca5c635f-0ede-4cb3-9e77-0382715b30ce,Dress,Clothing,6,195.14,d024a419-e957-4ca9-ada9-8f81361c21e6
+8906959d-4027-43ff-8b1c-22898972ce90,Eraser,Stationery,7,325.76,fa554c8b-82f3-47d8-b2d8-23e12c8415cd
+1c5650ba-4295-4ef4-8375-92a56274def2,Puzzle,Toys,7,78.27,c5e27800-3c8a-4822-a42a-716d51abf35b
+72c963d8-e9ca-4a48-a198-e93596b1b656,Comics,Books,3,264.46,3a3f7cc2-21c1-467d-b652-07bdd7422389
+9b29e5fa-13db-4d1f-ae95-5d8228fea1c6,Jacket,Clothing,3,224.84,d131ee7e-66d3-4c10-b2f9-3536e71f19f7
+47ca69c6-889d-44f6-8c0d-2853c088ea0b,Blender,Home Appliances,7,404.39,fbdc79bd-823b-4604-8fc4-d16bf8ce524b
+81c5afb9-7232-49e2-8088-10c76bcf067f,Headphones,Electronics,4,398.81,47e56ead-ae96-4656-b9a7-409ad55d6a34
+f32c4974-287b-420a-83c0-42fac7aa5f61,Chicken,Groceries,4,295.33,1fee45d4-cff7-4f9e-bbef-6933603f104c
+775a5ec1-1b94-4289-a770-7b8916343035,Smartwatch,Electronics,7,21.47,47640d7f-9830-4407-a4f6-f12a9b53fd80
+e4a7d227-fe69-4a15-95cf-6c501beb2786,Eggs,Groceries,2,436.15,483b94e1-62e3-4bc7-afad-dc5ce217d7ad
+774d4235-1ead-4741-9f66-5d8dd4662b5f,Rice,Groceries,3,120.37,2e4b3279-a478-47b8-9047-ae2ad744f4f4
+307b558d-85be-4e0d-8ca2-6471fd1e3d6d,Air Conditioner,Home Appliances,10,47.88,4c371d0f-f617-4a89-86ca-9a1605a3faf4
+c9a98647-f4a6-45a1-b8d8-4d3a6b78133e,Apples,Groceries,5,386.86,006185d2-c22f-4b53-87fc-b55319b83b85
+8b9beabd-4d51-4473-b867-77f3b759a4df,Moisturizer,Beauty,8,31.7,f8466a6b-019e-42f9-ae72-33b8cfa231a7
+ee77f7f2-72d5-4d0e-b523-d394ca45100b,Refrigerator,Home Appliances,9,334.49,ce52157a-7996-470f-a702-8449d08c5088
+0e44d8b3-eb4f-499d-91f4-70b365c35db3,Sticky Notes,Stationery,9,465.23,30155de2-e357-4f59-b88a-2fd2e0787003
+5f2ffe7a-6dc9-4c6e-acad-55e95496ed74,Sweater,Clothing,8,247.65,a709b5f4-650f-4089-b58b-62e9160eb212
+f5fe9acc-3d0d-4d67-a781-78cd63038608,Textbook,Books,8,111.63,28b7f7cb-b33b-4cf8-a5ef-a1adcb543d73
+0f2a0871-78aa-4494-a78b-8608a210faba,Puzzle,Toys,1,26.68,52aee024-5b7a-4a55-8a3d-73421d6832f0
+786e7272-0186-44db-a437-bcdeacaff968,Microwave,Home Appliances,6,6.92,925e2214-106c-4b07-b8f3-d3d25f3fee1e
+1099966f-5f83-49c6-9a0b-c9683b04e33e,Doll,Toys,2,394.41,500cc435-10c1-4ed5-bb1a-6b0292a7d373
+b2d5a4b5-de85-42d2-bab7-038221147df0,Sticky Notes,Stationery,7,281.1,54056bbb-d529-4fd2-8e3e-2a95ef6b3785
+83ac72fd-637d-4ea1-a31f-0c0fb61cdec0,Refrigerator,Home Appliances,8,100.46,71928d9f-9bd5-41d1-aa16-ae55b1dfec23
+f05bd4cb-0d00-4983-a535-503e30815c4f,Smartwatch,Electronics,10,442,d47ac50d-020b-4f4b-a299-698dea1057b7
+15be2386-4859-4ee1-8caa-7a14185e5b2a,Action Figure,Toys,6,270.27,1d24f882-a8f1-479c-bcc7-5fdfa5257ade
+a3c54e71-2a30-435e-b29f-471e8a3abffb,Eggs,Groceries,5,19.27,b8ff20d7-492c-410a-8c6b-418f7deb5799
+e8310afc-1731-4445-999b-8f5b71d8c1f3,Bread,Groceries,4,187.51,ffbf074e-ae7c-4e09-8e93-5817608ab45e
+8abe4fb0-efe9-407f-84be-30eb8368f216,Shampoo,Beauty,9,176.14,960d8f91-2497-4297-a256-9976161777c7
+5376d91d-d005-450e-8e7c-460475668cd2,Lipstick,Beauty,5,159.55,41ad3f9f-6ad0-439c-ac39-d293afa5226b
+24b55fc7-0b2b-459e-8681-6f84062133dc,Dress,Clothing,5,243.63,7aa77a0d-7ca9-4880-8277-7fe8f480861f
+292441d1-3353-4b78-ba0e-36bdc7bd1621,Board Game,Toys,5,467.42,3b8ad1c7-f4bd-4048-bde7-79acc354f8de
+14c5886f-d927-45b2-8575-526e51649df0,Moisturizer,Beauty,1,233.16,40a0ae70-0e15-422d-8213-13a4c048d7a7
+eef26189-f069-4e8e-8e7f-dc38a9e3fbd4,Lego Set,Toys,7,489.55,b123c341-4af5-4ad1-a681-2a5c85981238
+257a0641-f8f3-4a90-99c3-cf4b514b1080,Eggs,Groceries,8,63.47,dac99fdf-f08d-48c3-a47e-af8a480a49ff
+d2d1dccd-be63-424e-9a2b-957546eef621,Foundation,Beauty,4,53.87,f067332e-c7b1-4dbf-9919-9fab750ffabb
+d1c5340e-80c0-429e-98eb-a14397d8b347,Notebook,Stationery,7,442.71,734e5301-21a9-4007-90d3-3dd1e6f5954e
+0aadb885-2577-4441-8f5d-e28572fe5e94,Chicken,Groceries,10,43.19,c0cb2980-c441-4146-ad15-ca5986bd3970
+6079dbe9-29ce-432d-8a7d-d50883fad408,Sticky Notes,Stationery,9,378.64,93c6c7cb-ac64-426f-b910-83c3a409e8fd
+5925e4b6-ecb6-42ca-bf76-9f6ee0a8dd73,Action Figure,Toys,3,128.62,d4e5edbd-5965-4cec-912f-4b2674690b26
+50283d7e-5289-4f42-95d8-f0dcb1d32699,Bluetooth Speaker,Electronics,3,421.03,07fef9ed-2a55-444e-a62c-930ee3bd6c65
+3c9b4ad9-9d4f-4004-a887-44230e355260,Eraser,Stationery,6,163.2,c766e8ac-3899-4ddc-9046-996fc49e3c43
+b5ad9ecd-aa9d-4c82-97ce-9565f7c7a6b7,Board Game,Toys,2,280.74,ee70af9c-0908-4f3d-874a-31c789a047fb
+ade71864-af11-4d80-b6c1-26dbfce20ab7,Eyeliner,Beauty,9,395.57,7452ca88-f3b2-4b61-81e4-a859e776ff1f
+1fd8a485-2312-44e9-af69-827ddf30d003,Biography,Books,5,389.84,c58b46a3-c47f-47b7-a1df-21cfeab6c16e
+8b68b872-6f64-44a5-931e-ae8fd3b1671a,Lipstick,Beauty,10,233.73,706a6827-9703-4630-8cdf-f91aff14ec48
+45f80f57-379a-462c-9d97-cc7a7b293405,Shampoo,Beauty,4,13.2,89e2eac8-2899-4649-a28f-c3c760bc9ae9
+ffa72743-66f6-4fc7-af08-2a692dd5a9be,Refrigerator,Home Appliances,2,90.43,9023a4cd-5167-4f34-b7ed-dd6773b67644
+70cf29cc-151a-46b7-9bd5-5a449af225ba,Highlighter,Stationery,4,112.94,486c7ad8-c536-4017-8f70-279798d17a3a
+c05746db-6b7b-479f-8f52-a4a5b7ef261c,Lego Set,Toys,9,260.07,d016ddec-6c44-47b8-96f3-45ce867c8864
+b651e1e2-e98f-4e6f-a75e-ae2108431c17,Bread,Groceries,7,324.37,18ecb911-3f5d-4e50-b656-cfbbf6fb924c
+daa33ec7-2a96-493e-9e45-c6c8a8b0fc09,Action Figure,Toys,10,182.66,cc9ee230-0a4c-4626-ae49-aac2d2b630cb
+2ec30ed6-4157-46e0-9e11-58d0439fd374,Doll,Toys,5,114.67,d6647a93-0572-4ff4-8587-21105722c741
+7703223e-2003-4850-acc0-881251e66795,Highlighter,Stationery,2,261.49,87dfcd19-8e86-4cb3-908a-e25921767225
+0d4d5dea-52b1-4b81-bdc8-45085e970c09,Highlighter,Stationery,6,120.63,83df0168-9976-4057-9b2e-165daacd159d
+b205a953-ed24-4d9a-b851-c8230964434b,Shampoo,Beauty,8,146.98,9e33a85f-e990-4912-b5a3-f22c9bde88e2
+05f4fec9-6841-4038-964a-adbf4002e015,Science Journal,Books,3,405.83,567c3d90-ce34-4b44-80e1-721010647580
+23afc42a-8170-4e17-a9df-25b37bbc7eae,Highlighter,Stationery,6,186.66,f4ce8a0f-093f-4640-899f-dd8cae2ec2ca
+6368c77b-779f-49a5-83f3-3c405b49eee7,Board Game,Toys,1,406.94,75b45f6f-93ec-4fc7-8423-888ea0d3dc57
+61a0769a-6cf5-4712-b88f-715c4051180e,Jacket,Clothing,3,488,47212e23-2874-4836-8e83-8bafa80cead1
+86034c8d-a34f-4e21-9486-bc4891d39dc1,Blender,Home Appliances,2,72.11,793a90f6-0940-4f38-a034-49d9fb7f4730
+7432f29e-6487-4275-8d3b-272ea62aa11a,Eraser,Stationery,8,286.9,97127da4-ae5e-4ec2-ba3f-0bf2f3623f5d
+af44421f-4a13-43db-a8bb-0e2ce26c6103,Bread,Groceries,3,409.01,a4d5a888-10d5-4d84-844e-7777d1004b5b
+1af4c648-c666-41f3-a459-8eca5b4515da,Bread,Groceries,6,306.21,34a31218-1194-46b8-9da0-4e35ec115a9a
+41fec746-51c2-494e-8bb6-24260496513f,Lipstick,Beauty,8,450.9,a47f1997-672f-4b7f-9523-c8c82a9f8383
+202b2588-5808-43e8-81e2-7209f260130e,Lipstick,Beauty,10,417.8,15eacbb9-306f-415c-a875-98f60a60d03e
+adfc4765-cfdf-4aab-b1e6-f1d8a78a1ceb,Apples,Groceries,6,247.15,c3838c18-5eb1-4ff9-a61d-2b6957f6f5d9
+b4f77ea8-ac16-4402-bebe-d8753adff3a6,Chicken,Groceries,1,479.52,77d2f540-6519-49e6-aa8b-f0b43a900455
+534cc898-1d9a-4f2c-b14c-28338c0e0847,Moisturizer,Beauty,3,332.12,072aec78-2281-467a-858d-32b3aa38fabb
+b2e9438b-5ccb-4b37-b1af-576d6d68d556,Bluetooth Speaker,Electronics,8,275.28,a94daa46-6bcd-4e31-90fe-1639b2c27558
+e0ce3b75-5733-4d2a-bed9-c14670b6e2e8,Notebook,Stationery,2,133.28,952cd8b7-1232-4715-bff4-70b2e68fbe87
+6b06cab7-0c8c-4788-a513-9790fd2010b2,Skirt,Clothing,4,411.74,188308a1-7b68-405a-ac0e-34c42a842700
+72ddd22b-8a53-4263-8591-0933bf295759,Foundation,Beauty,7,472.17,87da8da0-0adb-4fce-92eb-5086c3997741
+6cc88fc9-1682-4a7f-8a6c-d08289341155,Headphones,Electronics,1,161,166a6b41-e9b1-400e-abe6-b8caabc7ab2f
+a591fe44-1880-4629-916e-8756048fec2c,Chicken,Groceries,4,174.87,bf85c17b-ed6d-486c-9dd2-8681395c05cc
+9f2df3c0-590c-49e6-9923-774718048057,Moisturizer,Beauty,4,133.75,af7c6550-f9f7-4405-a821-7db7f1506724
+c75aa80e-1b49-4a03-852e-2d0e589a3494,Sticky Notes,Stationery,1,181.4,28216c0a-a65c-4a8e-81b7-baa727122e0a
+7a193819-f4f6-458e-9160-51076017df6a,Apples,Groceries,1,367.5,80a5e3ca-3047-49db-9a5f-dbd83efe6a49
+1ccdbe71-0ccb-4b55-940b-77dd09f2e78e,Board Game,Toys,1,248.1,4b9a4d2a-5914-479f-b60b-15a8f0ea47c8
+ac41bf71-a6ba-4712-a4d4-dd47c508e6e5,Moisturizer,Beauty,1,124.53,c9c93ad9-00c7-4c7a-8039-26e37c60da44
+0fd705da-5d0d-4ae5-84f1-a3287a855ca5,Chicken,Groceries,6,37.94,36ca6528-11f2-4bcc-826e-59d9aedec024
+530b7428-1be8-4f16-959b-086d557b1391,Microwave,Home Appliances,7,72.25,32176735-a8f2-4ebe-a0cc-89076a29225d
+1e678cfd-7ffb-4b53-ae50-569f5b94e619,Moisturizer,Beauty,7,75.32,9e456914-29b1-4d8b-95bf-4cccc895117c
+ab9e66e3-1e41-4337-999a-bfede44f3615,Laptop,Electronics,3,326.29,1d7e3b6a-d077-4cba-9d05-5b869d6282cc
+ced1d2a5-eb4d-4b8a-9a6c-7f26bf54083f,Dress,Clothing,1,207.6,a822bad3-eb1f-4722-8c3d-fea8ca83a022
+5f5ef2f0-3a2e-43c9-b5db-0d7d378182a8,T-Shirt,Clothing,9,268.01,30950f05-e034-4ca1-8fcd-9c5dc3407481
+2d3c3f59-58ac-4f31-8ba3-067e1f8ee9b2,Skirt,Clothing,8,380.75,1f178afc-0a74-41b3-b9b5-84eebc8b6426
+2f47a786-ce8d-4eaa-aee8-bbdd29142031,Comics,Books,2,207.42,5c0f641f-8788-49c8-8e21-235335dcc709
+531d9e1a-6a50-40a2-9a56-f83e0e39a964,Chicken,Groceries,1,252.77,fdb9eb38-2b7b-43af-9ace-9326fe6d9920
+8ec1b5c7-ecd0-477b-b116-67fbeb9829d7,Lego Set,Toys,9,420.83,c2d9a406-72fc-45c8-bb1c-c41dd0c131b0
+5e8cf9e9-ebe4-4dab-b444-643cda6d3cc8,Air Conditioner,Home Appliances,3,44.43,bee06de4-b27f-447e-8bc5-0e1bf25c1a11
+70e3ac46-5169-420b-a3ed-e69fa01f95ef,Textbook,Books,3,127.16,f40a9bfc-a587-49d2-ab7e-e48ffc1aee0d
+a2e8187c-8492-4ec7-ac74-eae58a58c7c2,Bread,Groceries,9,88.32,c2c75f58-aab1-4dde-8455-1112a92bc85e
+ebcbab8a-caff-4bfe-82f1-d7e9507d63b8,Rice,Groceries,10,56.31,e5d9b94b-1b02-4d15-bc11-418447bec85c
+b08777d7-c3da-4805-b9da-e86da216d764,Refrigerator,Home Appliances,3,309.39,ce07584b-7e0b-4a14-800e-7a4c9b72c2b1
+18f38731-b853-4f74-89ad-c06ea9bba837,Lipstick,Beauty,5,173.42,4cdd59be-1b4a-4ca2-8bc4-f4c3e76f02a6
+63ef230c-00d5-4162-940b-39c88d72f3dc,Board Game,Toys,7,18.5,cdbdf851-5923-478a-9d8c-4bd90e987e6b
+ff4c6e14-7c61-4b21-95f5-2010cb3defc5,Board Game,Toys,8,49.36,649d1bf7-d131-4507-83cd-047d9dc13596
+db140f6f-0bfd-4b08-b52d-c65933f3f107,Foundation,Beauty,3,231.77,533db44a-ec0d-4dc8-9e50-cd80904d8a9c
+5f839bdf-3e40-4eea-a7df-3963a4e75155,Blender,Home Appliances,6,85.33,4a2cf815-65b4-4456-abf9-9769d1ad0722
+1f37f6f4-d465-4ac9-bcd6-0d4fa254cb1e,Jacket,Clothing,6,138.57,42a6a336-bd21-4d0c-9feb-8674c5ceb436
+a9255f96-cb81-42c9-8692-1e1db7655f5b,Pen,Stationery,1,158.83,8d23d97d-206a-4c91-8af5-3e410329edbb
+3cc1c286-98e2-416b-81d1-1f5be1625a14,Notebook,Stationery,9,237.11,7b2c1bf6-97d4-4dfe-b346-265a887b0c93
+3d6c973d-cbf6-4204-8c01-3a7488ded721,Laptop,Electronics,9,287.4,3c271d5d-93bb-4ad9-a31d-5ab901dcb7c4
+3141faba-a1f0-4602-9f8e-415f77ab54b9,Comics,Books,1,230.68,55de44b2-7dbe-45db-a56e-3d67d8900fb0
+c90835a8-1497-49dd-9c66-14d3d392ab76,Eyeliner,Beauty,6,250.52,1b241af7-742f-429e-810c-75ce1f970998
+3c6e7c6a-3009-49a0-a21b-454ba2f8f1e0,Shampoo,Beauty,1,130.69,0957912c-3456-4c61-a835-fd0d58ccddf7
+269a6629-9853-4d2c-889b-52524c6308ed,Biography,Books,5,497.5,613f3658-a2a3-4db3-8845-bf7d7ad81234
+9c7e1482-ae9d-443e-b523-cabaa1c128d0,Textbook,Books,9,260.55,df857d19-a07c-47e9-8141-5d2371480bda
+58702399-7fc3-40ef-8695-156f2f3e9fe3,Rice,Groceries,5,108.44,2ed6eb51-d358-4fd2-b96b-d309b52ce9ce
+ee2b5905-d7b8-4156-b456-89aeaf428419,Bread,Groceries,6,403.38,4664e919-2b34-4e41-92ce-d40944ede8e9
+272de9d7-5168-4ba5-b6ef-530a4afacb8e,Apples,Groceries,10,338.56,1e3c8237-83cf-4963-bd24-998fe02341ca
+9f59211c-535b-429c-abd0-70484cf49d72,Comics,Books,6,85.46,e1f74238-091f-4389-9792-9e883b80b3fb
+01e2f215-8be2-4564-b583-a04ed1583a60,Puzzle,Toys,6,423.88,27852e04-5a4c-4140-aedb-ca6234de289b
+13bd090e-a864-42ff-b7ce-2dc6d20d21e9,Lipstick,Beauty,10,409.1,3886b140-0546-4c79-a582-2f8b25999e08
+4efafdf1-a105-41b2-8d86-1b33f9f2403a,Smartwatch,Electronics,3,476.39,671f4e15-8fc1-496d-8a5b-05a205462382
+b680657e-30c8-458e-9fb2-190326e89453,Tablet,Electronics,5,314.73,62dfba09-dc7b-432f-9304-bc8c8cc2e228
+b42ac722-04ea-4478-8fc0-7c97d25e67bb,Skirt,Clothing,7,302.35,25175dff-4c65-4f7c-9ca7-037648a5351c
+a9bc2ed5-9e8c-4fb3-8955-9eadeafd2e37,Bread,Groceries,1,395.23,52d88ef4-a985-4eb6-a8a3-627630729829
+889e243e-594a-408d-bf95-70ea73cc04fb,Moisturizer,Beauty,1,223.73,4ba597d8-8378-4cff-9ee8-69c531c407c4
+ecba4f25-277d-4cd2-bb85-304c29ac6a97,Washing Machine,Home Appliances,8,455.4,f30ace5f-3132-4f6a-aff8-7795af92fe2c
+304db0d2-9abf-4be0-a06a-f08ed50664eb,Notebook,Stationery,5,374.9,cc18e39f-ccd3-4efa-bb94-4fbb2affdeb3
+dcb85522-d1e9-4884-878f-db95247cbec0,Lego Set,Toys,2,276.69,d999d624-4468-412c-a22d-ade3fd831327
+8f170baa-b57b-449d-910f-f927b5be2999,Lego Set,Toys,3,267.12,e97ca17a-6fcb-4d21-a2a8-70f4101fa67c
+511c7355-2f70-4335-92c9-5ef83c78b7f4,Apples,Groceries,3,291.95,125c3412-42f1-4764-b9cb-a0c04718a441
+18b06f11-06a6-4dda-a875-97c0b65ae604,Microwave,Home Appliances,9,304.5,a0661208-b066-42e4-98a6-6c43dc80584b
+dceb8d53-8a8c-4b9a-aea0-834f5ff00c60,Textbook,Books,5,159.14,420c9b0e-48c8-4123-ac66-15510b7be5c5
+b43f23e4-723b-49b9-b7cf-1f743a9cceac,Refrigerator,Home Appliances,5,473.4,d12fedef-8019-4330-a777-4783e51da738
+8ab6e109-433f-41fd-adb3-487302010c95,Shampoo,Beauty,9,162.38,6cc2187a-2a5c-46c5-b009-6f8d634fff66
+12710c8a-73a8-4f70-b5c7-bdd29b707a2e,Science Journal,Books,4,354.26,5f80f0b8-bf6d-4e19-9891-bdd571b61dd8
+72a98683-d192-4dfb-a0b8-4ee4f2ed5fe3,T-Shirt,Clothing,3,423.15,447b4d42-f8cc-43d6-a9f5-5e9562988ea4
+b9b692ca-c850-4d64-8820-2ce5722aca38,Board Game,Toys,3,393.4,a5ec2e4b-23cc-40ca-8e6e-ba425628d0f4
+b4197b4a-cdb6-48a0-87d6-f1f88034f46d,Science Journal,Books,10,195.15,70eaafbb-80ed-422a-b083-024188cfc298
+d5a8270e-865e-4cd7-a89c-988e80f5b6af,Puzzle,Toys,9,456.65,23ccfba3-3c91-4681-b5b9-4869afb481c8
+6e3e4c07-f1c9-4150-9515-fc628d2280ea,Tablet,Electronics,10,400.25,4cd6c3b8-932b-4d6e-b79f-099748eb92a5
+3d76b2f8-4321-4615-8143-7dc89628abdd,Highlighter,Stationery,1,184.3,d0fbfe5d-a57c-4748-93ae-2d3fdd6c098b
+6d2dc28d-c87e-4d1d-8781-a7a313535772,Board Game,Toys,4,317.3,5ceddd65-ab58-497e-980c-c683224cffa4
+972c754b-8f3f-4294-98c3-a077b0b0a8f9,T-Shirt,Clothing,4,287.92,269bdb99-4a08-4a07-8afc-e850afdfb73c
+213e4154-9fa2-4b16-825f-1172f341dee0,Smartphone,Electronics,5,96.65,ad457db7-d04e-4dad-95e9-c9b6786ae580
+76fa1ce2-f992-4962-b8ee-48dda63aabb7,Microwave,Home Appliances,2,288.7,f46fc3a0-1f0f-4e64-a233-f4799b88cceb
+ba71d48d-4415-441b-add9-cac99ab5868d,Apples,Groceries,8,432.56,aaf5570a-b1e9-420d-b3fb-b8150a554856
+1424e421-b69b-4717-9007-b2e39783cdd6,Textbook,Books,3,223.05,dee3cf5c-b03d-4890-a6d7-d8cdff98cccf
+7e08cdc3-12b4-4b65-898e-9753cf396488,Lipstick,Beauty,7,470.49,2da3db3f-e2b5-4662-8e91-869bced3a197
+cc796326-b87d-4d14-bb3c-d78903d93a08,Jeans,Clothing,6,306.8,a22a8a1e-ccee-43dd-832c-267e4923f324
+0e56556a-38e7-4277-ba61-c85711488abd,Action Figure,Toys,5,19.92,93f5de87-fccc-47ac-8f18-02d1d2138189
+3e5e8797-6f58-4dcf-b59d-f83340a41097,Dress,Clothing,5,105.38,e80f2b77-caa4-4a9b-b432-574372b82276
+8c3d7361-c8ab-463e-afcb-56b17d2e1c00,Bread,Groceries,7,388.85,115d5e81-fc41-4849-81d1-fb50adebc0b3
+a709fe7c-415a-4056-a98d-cee39ab1834d,Moisturizer,Beauty,7,350.06,d5dcf4d7-518e-4897-bd48-3a982e7314a0
+e7d3bb99-68fd-4e0f-afe1-bc957532ca52,Jacket,Clothing,10,235.33,b5742803-ae56-43bb-aa70-96129bd59edb
+56742c41-213f-418d-9a57-8796cc1e6a7a,Skirt,Clothing,3,284.39,8ffa8a6d-2fef-4cec-8243-5f948ca129e0
+451467d3-aeff-423a-a04b-d5c4d1200687,Tablet,Electronics,1,202.06,4df21efc-72d4-40da-904d-03869a2eeb1d
+efb6a86d-6bd2-427b-9d39-4beadf632ece,Notebook,Stationery,3,25.59,288e60af-9888-48f1-8ddc-e695897ace50
+2a531e42-9ec6-4e16-b4ad-f606c950fd5f,Air Conditioner,Home Appliances,6,183.71,7130e939-57f1-4457-aca2-d94e19f9b4c5
+b358b204-f291-41b6-94b5-0bdc601de6ba,Tablet,Electronics,2,337.34,3d1911b0-4854-4efb-bf8b-264a651c7c36
+b8404d25-177e-4d8c-aac3-692efcd97516,Action Figure,Toys,6,464.43,4417db0a-3d36-4e24-9d0d-f09a44b5ce23
+9bc3160d-4b14-472a-a47d-ff60955e879c,Moisturizer,Beauty,6,199.36,50100c59-6351-4c4a-b55e-05a69ec3a78c
+fc9249e4-1ad5-4c3d-8cca-733b65ca2d84,T-Shirt,Clothing,5,206.18,6ed4d299-cb8f-4749-944c-da3283f1872e
+19f984ae-54ff-4158-92bb-fd63b09d6a83,Comics,Books,10,78.01,985097ad-65ba-447c-8b77-c620e338516c
+cd809c1e-fda1-47cc-9411-7b7029bc116c,Milk,Groceries,1,85.64,c4ecdb5c-7b99-420c-bb66-a9ca958f45c3
+31c65373-91b1-40f5-b474-3472c3e82260,Air Conditioner,Home Appliances,8,354.13,067c96cf-f909-41d6-b044-dc4f361446d8
+d9bb5398-118c-4ca1-8b75-8ad38cad7c25,Biography,Books,1,366.26,04df143d-0d8b-45b8-aac2-0a1a2bd99508
+86640f45-c313-43a9-b649-3e54f61c12ff,Fiction Novel,Books,9,347.14,88403bdb-def4-4262-9627-9b9ec8cb1815
+0bfd95a6-390e-417f-b6aa-967558e0d989,Microwave,Home Appliances,7,475.09,c789619d-6cf2-44e0-a7e7-dee8e6866989
+e85640ee-6256-422d-aa80-3c8dc69b2122,Foundation,Beauty,10,407.43,23cd2f51-24ab-4e6a-adbc-dc4292de2ddc
+a8a30f41-8934-4521-aa36-f2696de4609b,Dress,Clothing,9,91.34,47d75778-dcd3-442c-aadc-4e192f8bb2f7
+c258ae5a-e2d5-4826-9412-591b73da3645,Jacket,Clothing,4,401.1,4eb6655c-f789-444c-826d-cab08dce7fe8
+3cbec554-e82d-4b0c-81e6-84ceb83dd4b6,Tablet,Electronics,5,392.25,2cf717a1-4569-47cd-9bba-810cf4df6c88
+4a00bdf1-0b00-45ae-a80a-4f0b5e9c5b20,Comics,Books,8,499.28,4380a949-d69a-4ed5-82e1-405a1a9d7a23
+c0d4ca6d-381c-453b-ac90-d57fa54bdb2f,Dress,Clothing,8,278.6,a3e4a0ce-3cb9-452b-af91-527fbbb7dd56
+b61af4cc-c993-4574-96d2-443ed3b1ffcd,Rice,Groceries,10,92.6,ada4dab9-3a8f-4461-820a-c608f1fcf63b
+43b73c27-38cd-4163-8959-c432f999e15c,Highlighter,Stationery,6,409.81,e8ff3d13-2fb6-4de2-8a92-7b05627ebf7f
+7eeea058-1868-4b2f-9a1d-ddeab55d40cc,Eyeliner,Beauty,4,325.96,aefa57fe-8f84-4ce1-8cf3-49920cb07207
+4b815998-2057-412d-9906-c91a2c821e02,Notebook,Stationery,10,123.17,f5923db8-a28f-42fa-a465-469d3d318dc1
+6131519b-9b40-4b33-b226-c2d78912eb20,Eyeliner,Beauty,9,83.9,353e610a-3112-400f-922a-f194e2faad44
+881688f4-7438-4d76-8778-32bd2a221960,Chicken,Groceries,3,240.86,33f488a9-6932-447c-bf76-d39554cf7e79
+be87f405-5016-487a-99d3-f7fbf783c3a3,Lipstick,Beauty,9,45.8,cd7b9c14-1e4a-45f4-bc38-f0ff9832df28
+23c0bb03-13d7-4a5d-b813-30a113773e61,Action Figure,Toys,6,6.22,ceab6ce4-ee47-42d5-9bb9-1048c2adb925
+531423d5-3d37-4f5e-baa9-7c3e6fe5c4f4,Eraser,Stationery,2,216.73,c1845839-e800-44bd-bc67-c0a4a41675d8
+54960d8c-ba26-432b-9042-98549564e7b6,Doll,Toys,10,228.53,5a38fced-2372-4c8b-8398-b1d638a2ca92
+e1aed2ef-edcd-45ef-8cce-f31ed5b6c2fd,Jacket,Clothing,9,184.22,60875cfd-3e20-4ba6-b8ed-51ddf13a077e
+ceefbbf7-ec64-40e6-b778-d66cbf7e9f4a,Pen,Stationery,6,463.13,c4b91a3b-8574-49a6-9ff9-0343b849ede3
+9060bf1f-fcb0-4d3b-8a1b-f0dacc3e9d7d,Moisturizer,Beauty,3,14.5,c3208c7e-d072-4405-96c2-17494904ff38
+738aaf5d-c618-47cd-adaf-26b40bd3bdf5,Lipstick,Beauty,4,26.85,3d54a823-d785-4add-a05d-bddcee57e4fd
+5c27b826-353c-474d-8b27-0e0d6f18cf88,Eraser,Stationery,5,399.4,e3e19327-e038-498d-a380-10a78a1ac831
+c5dfffd7-a28b-4ec4-b576-bcef4616ce84,Lipstick,Beauty,3,182.15,13eb5ad9-a790-4a5b-91e3-fe48fcbbe980
+1466aca2-eccf-4a7c-bc54-9f4996c2d3c5,Skirt,Clothing,1,223.15,c8f99370-197e-4952-a7e8-fd3caf6a5923
+aea45a60-c3c6-4923-b48d-9939b17b2959,Refrigerator,Home Appliances,5,337.8,788be511-01ad-4eee-b740-5608a20a615a
+1c66ff18-5cc4-412d-9aaf-5dd78c011196,Eggs,Groceries,8,209.05,0cc40ba5-1576-48b6-938e-f3b24f9412d9
+8cd948c2-4d06-4be7-a400-1c81c6febcf1,Comics,Books,8,402.19,fea29827-a676-46bb-a971-546934e5b0df
+1661e9e4-7fdb-4db4-b0e9-30e5dc43bfe8,Eyeliner,Beauty,7,36.73,fd4fda65-75a8-46f2-95d1-90f280d8c1e5
+af15804d-1b7e-44d9-a00d-aa8bcefa9f12,Sticky Notes,Stationery,2,17.96,5ca0265f-dec5-4549-b921-0c2c0915b647
+567d9325-9662-40f8-b1d9-519852413ff7,Shampoo,Beauty,7,309.93,0f8c185a-1f7e-4b3d-a784-b9c2708961f5
+08c59f22-9a41-4548-91f4-640ead8ed6bc,Microwave,Home Appliances,8,396.42,1822985f-3c41-493e-a2ce-b25c00d61649
+afe5d7d9-a031-411b-9757-f62f870d0a66,Smartwatch,Electronics,2,429.7,04c7c745-419d-401f-8605-686deab14eda
+40ff0185-9cde-4581-abc6-a3731e767d80,Doll,Toys,7,396.41,f8d2f643-0ae3-492e-ab42-4e09e960135f
+0a44df40-ec04-49fd-95c0-425de87b9b53,Apples,Groceries,1,325.76,9bbcdafc-e8ee-49a0-8c16-c53eeacddb35
+039e4497-7db0-4484-a56b-2f71fa9082c5,Smartphone,Electronics,2,170.14,91232d25-04d6-4727-9944-03650655c28a
+b2d91a33-3200-4d81-9e5e-37338f4c56a4,Apples,Groceries,1,81.36,0ef48d09-bc6e-4434-a29b-ceda81e20a83
+251b0c77-2ece-468c-87bc-77f2431bd896,Shampoo,Beauty,5,480.12,f617409f-658e-4b3f-8939-1ea27bc844c6
+d70f4e6b-9dd7-49f4-8530-064fb76f6f4b,Washing Machine,Home Appliances,7,172.16,5c745be8-63c4-434e-b422-022f143d8467
+4f031838-5704-4363-b4fd-c4302e38e587,Lego Set,Toys,3,84.48,514bc391-fee2-4651-a4e3-c82ea5bb2887
+3c487356-9ea2-4177-a6f1-d2fececfac19,Eyeliner,Beauty,4,471.86,42e84bbd-5b96-4525-bf60-8550cffca385
+53a16276-f950-472c-ad6b-2b44b05acfc8,Microwave,Home Appliances,6,473.07,b7f3f7ba-7f68-44e1-988b-8f73b6f21cd2
+c660938a-cdcd-46b3-bb9e-1a8a67289c5c,Highlighter,Stationery,7,26.86,7601d714-8113-423c-bcb6-718d797d57d3
+1867900f-d7e0-4e31-aad3-7fdcb25bf4a9,Jacket,Clothing,5,167.64,e2888e36-7260-42d5-bd14-2534c43e1288
+806e3be8-afae-4aad-8e34-0b07aad506ed,Doll,Toys,6,116.89,9a982e1e-a266-4656-b515-1067af09e1ae
+dabb0985-6d48-459f-9eb9-23f21100ea2e,T-Shirt,Clothing,8,184.83,4e95c998-3ad5-4302-a9b3-82cd86eb1ffa
+e6652eb4-cf8f-493b-8601-b6fb7ab78aa7,Smartwatch,Electronics,7,284.63,e7bdc873-4481-4b52-9fcf-d1890ebf0149
+2f17acff-e15e-4cef-9141-39b6ad772649,Notebook,Stationery,3,465.5,30101f95-93b8-4a05-bff6-4b97fbf92822
+b4bcd99a-560e-42ab-bcd4-5f7f6f3584fc,Microwave,Home Appliances,7,360.64,1609941b-9f18-47e8-b9a6-4013fd1a26fc
+b8a65f97-b9b8-4663-a538-5fbb9e73328e,Washing Machine,Home Appliances,3,14.66,929f5010-b293-43df-95ed-b8a8e98b55f9
+bb2a106b-f3af-4ee0-906a-0c8b3f84ffa7,Doll,Toys,9,6.83,39d1adf0-4b46-448c-9ad3-ad8ca27f292c
+635f6152-b03e-449b-9a49-0a39342730ab,Jeans,Clothing,10,307.68,bdae3835-b935-4dff-8fac-23094c8cf825
+57d024cd-825e-4a6e-a252-ebab5cfc7d0d,Fiction Novel,Books,7,394.91,78f00482-b363-48fc-9a35-ace2650d3a9b
+e8d6658e-d967-44de-b199-e3c0ce2196ac,Eyeliner,Beauty,7,286.18,0f01d4da-5308-4254-8db4-1d0610293283
+25107002-929a-469e-8eb6-b94456e70728,Biography,Books,4,461.66,1c07b6b7-1f99-4cde-9349-76f6194027aa
+23c402d4-3af7-44dd-b91c-8b18884aa09c,Notebook,Stationery,9,112.25,845fe77b-c5b6-4a35-ab1f-6d2dd20beae2
+1e2677cc-6b31-42cd-afab-f269a6a36370,Blender,Home Appliances,2,69.25,1d38c247-c298-4091-80ef-887c278dc51a
+d4d5bfe5-424f-4824-a281-39a7bc214740,Shampoo,Beauty,6,483.2,9e3a6377-a213-4cb3-b516-66383cee8a28
+ddd90af4-adb9-4cb9-a31f-3a4ed27d58f6,Highlighter,Stationery,7,126.59,6d1189e5-a441-4c6d-894b-fadd0ba6dd0f
+b1f9f283-5b39-4a24-9be7-90eebfc6baf0,Sticky Notes,Stationery,4,458.59,670f9bba-f5ee-4207-9f2e-d2083fdbe2d2
+d4040076-1dd2-4550-a0a0-07ee690cba5d,Notebook,Stationery,8,201.54,eefecbde-6555-4dcb-87b1-c93b8480fc41
+8833b213-4292-43f1-9472-014b800a59ba,Sticky Notes,Stationery,2,418.61,96645d24-2a43-4e72-857a-1c67dc9e56b0
+23b51b6d-957b-46af-8aae-6c35a750cbd3,Science Journal,Books,6,273.46,cf9a00e3-e939-4af8-8382-9e9aee3fd0d8
+fa0f1cb1-6bdd-407f-97bd-7059758b00d6,Biography,Books,10,390.9,00bca739-488c-44e9-a003-be0005869270
+ffe7a46d-a074-44ba-ac0c-66b7d2765bd9,Lego Set,Toys,5,24.95,123c030b-1a5d-4144-aa90-fcde36ce329c
+b56afdad-d53e-40ef-964f-84f46ae96729,Dress,Clothing,2,269.56,9c996708-fc59-4201-9622-89dc746938f4
+580fb6e1-4489-41a5-96d8-3f0cec8edf01,Bluetooth Speaker,Electronics,3,358.17,acedb428-1639-4f24-9620-4c22e7e27e50
+4d5d1642-509b-48f9-85e0-6e267fb6e5a6,Skirt,Clothing,7,366.85,4412cae0-4e0d-4c34-a4f2-81273496e441
+dc124921-cf69-47f1-be41-ff025a0cd5ac,Tablet,Electronics,2,358.03,77f5bfd0-6768-4ced-a80f-18a9a9781d71
+b388528c-ab63-4266-9ae9-3661f1162dd4,T-Shirt,Clothing,8,84.88,44ef944b-08d1-4f62-ad43-4a10ac0bcf5f
+50d81fb9-9335-465f-bb2d-a1ca9e8b64e2,Textbook,Books,8,208.49,f57352f6-a680-4ef3-8834-b2e248089a2c
+0e28bebd-2a5a-4298-82d8-255ba365fe6c,Pen,Stationery,5,382.11,39245220-f6c9-4ebb-a066-c5425f32bcc5
+c87926bb-dd11-4d26-bdcd-176808cc2e6c,Pen,Stationery,6,75.63,aa771a3d-712d-4967-99b8-7697a5cbd51b
+a590625b-9e87-474d-a2ba-21dda51b4392,Action Figure,Toys,9,377.95,1b764a9b-38b6-44c6-bcf1-2696d89f0ede
+7a81c61f-65f9-467c-b33e-ab8dde4a8596,Bluetooth Speaker,Electronics,5,92.56,a1f5b2fc-bafe-4578-abf4-474249e02e49
+b813378d-4eae-46dc-8b83-f85066f7d26c,Bluetooth Speaker,Electronics,6,151.54,9ffd6078-aae5-4b10-a442-26959b2b7d98
+b7660143-eacd-4ebd-9313-fb68c6b4225d,Shampoo,Beauty,9,218.45,00f538b9-fc57-466f-b0ed-8d11fdc1d062
+ef01e244-39dc-4b5d-9bdd-282b9041fcd5,Apples,Groceries,7,365.3,5caeeeb2-79d7-414b-98d5-4c1e1fe87082
+5acf3aa0-bb54-4ba0-9ccf-a06f4d458539,T-Shirt,Clothing,3,70.42,3537169c-49f1-4e1c-a52b-f922111dd21c
+c29985ac-a394-48f8-b55c-7c7aecd52680,Highlighter,Stationery,6,87.05,4a99d043-18c0-4053-88b7-0db6a8cc30c7
+3836647b-aeeb-4080-b039-925b230d958f,Pen,Stationery,10,202.21,b4c9beb8-ea21-4074-9e7e-ea71604fe776
+159775ef-1100-4074-9ee9-259395c65504,Milk,Groceries,2,390.01,48edf11e-7613-44e1-ba69-5516805d6a28
+b05be630-2ec4-4864-b6ce-a48f50157e5c,Foundation,Beauty,9,73.46,fd8a1b6c-ac5f-4059-9832-a32638172386
+7c46dec2-c239-4a12-8a51-2de69d667f17,Board Game,Toys,4,86.41,c6b25489-cc0f-4a45-a531-7da077283bbd
+bf64aa85-a25b-4a3f-9398-bb64372e2e1a,Microwave,Home Appliances,9,72.1,b9f876df-262e-4000-85bb-71555e4713de
+949e2545-6bd1-4f59-9339-90c60863ac86,Blender,Home Appliances,6,450.43,fdfa3ad5-c9c6-42a7-b218-029bed767a57
+12b897a1-6959-4120-8118-c183adb0c8c3,Biography,Books,5,359.64,ff48ea37-44d4-4b6a-a0af-eb420b19c819
+ab8ec5ff-7f87-4683-8295-85d00f36c312,Microwave,Home Appliances,2,402.27,0f76b8c7-22a2-4b29-91c6-9c2fc36938db
+58bb84f7-368a-470e-8175-1167452769f9,Biography,Books,5,450.11,bcb215d7-6543-4171-a7bb-bb0990b58bff
+543a26eb-5423-4840-a94b-542e16a9d90b,Skirt,Clothing,9,484.42,1300790a-df7d-4944-9383-e90e58956824
+62fb7c98-da51-4bc5-82fb-d5c59b801e33,Headphones,Electronics,3,456.52,af166933-5a35-4005-975d-9628e5f60f31
+0541ce9b-3146-47b2-baf1-5bfb032f9507,Biography,Books,9,156.09,c16669f9-3b95-475c-b4d5-e0b7a2d5a868
+8869c450-665c-4ffa-b910-788e3b6bba40,Sweater,Clothing,6,198.18,5ec165ac-73cc-4833-a821-189a260293ee
+7f66b5b5-0fe3-47cc-b826-4685e2b0c005,Dress,Clothing,9,156.55,7f24fba7-d036-4273-b607-3b486d355fd9
+d78fd697-93a9-474d-872d-7178a3fac470,Washing Machine,Home Appliances,7,407.41,6731acb7-b184-4392-b090-079a1374ae48
+f520ab15-91fd-4104-942f-b0a124ad7ce7,Lego Set,Toys,1,293.83,e922d490-a3ab-4bf6-a035-bd1392f3a859
+bf1fadb5-78d0-436b-9b16-41197005e752,Headphones,Electronics,9,57.87,d765d92c-47bd-4479-a4c0-ad770eae16bf
+de1e4fa2-37b0-4578-8d00-4fee4673bae7,Eyeliner,Beauty,10,490.95,563effe3-a11c-44ac-9659-bdfe7885009b
+b4376710-fe26-4d3d-b733-ca6e9c923fdd,Bluetooth Speaker,Electronics,5,345.83,65247248-f7fc-4614-9b8e-64770180723c
+9a051f81-aaf6-4141-b119-6ad9393f87cc,Microwave,Home Appliances,7,47.26,4c7f11a2-a894-4c1e-a209-9847550cf670
+e3937585-64fe-41cc-9fc7-96e40327a156,Foundation,Beauty,1,62.12,014a752e-84f6-438e-8091-e5cfadc41a35
+afbd8bb3-922b-40a2-8bc9-aaa21ffc4ced,Bread,Groceries,8,162.59,beace686-52e5-44cb-848e-9dd7c04f8800
+22be6619-6e2b-4cf5-b54c-4faf8b74018a,Foundation,Beauty,8,187.7,4c02ff6f-6b7c-41a3-9564-6d654edb1acc
+3d67996b-d2f8-4371-9754-f381312b6ed5,Eyeliner,Beauty,5,334.94,c8dd9f42-4e9d-4253-acd6-ce12f0b04ca7
+73604b21-a532-431b-9b1d-4d4679b9f5d6,Pen,Stationery,9,278.06,bb8cdc30-de5f-437a-9a69-b511803f0ba0
+84cd5abf-17fb-4378-9ad1-ecc69a81b19d,Comics,Books,9,460.8,1d72d723-a735-41e2-bf65-31497353619f
+e717a1fa-4794-4b70-b847-6efff28fc06f,Moisturizer,Beauty,3,439.94,c3d62894-d968-4c67-8097-424c08727bfe
+260bf48b-90ee-40b4-9a0b-a3562e5834cc,Comics,Books,7,306.09,2ed95d13-ad8e-43fa-be08-e004f7d83b86
+9f8809f8-ce88-4384-800c-9f7c9b17deb9,Blender,Home Appliances,7,135.74,292d1524-7ad5-4fca-a4bc-e1b479083475
+87d7a383-0713-47a2-bcde-1dca64110e2d,Eggs,Groceries,3,460.23,4bfeac0a-542e-46db-9db4-6345a33e8b92
+2d5249ad-f4ee-4582-8f42-dd064a02b3f3,Board Game,Toys,10,31.56,f2fe4e3e-603d-4361-88a0-ef6643fbfa9b
+95b2d8d5-b7e1-4769-b78f-cd19cd9c4275,Puzzle,Toys,2,323.81,dcef5249-1f4d-4bee-8709-36f76f82d11c
+f6dbfe77-94d0-49ac-97a6-81cbfa4f4669,Tablet,Electronics,4,255.86,92237444-78dd-4f55-ab75-c8d1acc40a5c
+29b84332-c24a-471d-a0eb-3869689c67a0,Moisturizer,Beauty,1,242.57,a18182a5-6395-4d1b-bbd0-063b79850f75
+04d1671a-2b00-472c-a8dd-a156bebb92fc,Lipstick,Beauty,5,417.41,e8a37349-4698-465c-bbb0-12552474fa2c
+c8f1771d-88a2-4883-b62d-e5305e60f79d,Lipstick,Beauty,9,324.27,7e67caa5-841d-4b14-a39c-97718807c6e0
+63d16ebf-2b29-40fc-89ac-c20d695c4bd8,Washing Machine,Home Appliances,3,118.74,f82df94c-3e1b-49b9-a273-4b47e6e533f8
+6c80c869-35e9-46c3-98fa-e37607ec31db,Biography,Books,3,154.71,6ca7757a-3f4f-405c-96c8-376ecaa3fb3c
+0d2afbd9-de1a-43b6-ab6e-38ed98107533,Eggs,Groceries,3,231.18,9be0b0d1-db66-4dca-b029-f71a426158b2
+2351417e-7c9f-4687-9b10-47afd4d9d34d,Sticky Notes,Stationery,8,199.66,54a01809-d433-497a-85ad-3bd6120de837
+bab49e6f-03c0-4182-8a9d-3887f19c3e57,Puzzle,Toys,2,136.44,b81ba8e6-86b1-467d-b7d8-134fdf882e03
+4b756ea6-428a-4561-aa0f-978b46862ebf,Bluetooth Speaker,Electronics,2,151.86,bf5d7cd4-f4d2-42f5-9b47-887581a2fcd1
+ed2a24d8-d805-463f-ac8d-88a3ec095551,Jeans,Clothing,2,73.62,cac56e93-eb56-4ebf-92e5-7ee0b8e01204
+1c6b9499-a404-49e8-967c-fece98325869,Highlighter,Stationery,3,295.31,0de5257c-ed8d-416c-9d2d-cb75ad4bf4a5
+5a1b63bc-327c-4c4e-981e-d85c7b5d1778,Shampoo,Beauty,1,431.71,71701497-e7a7-4536-9d0c-30dffa105f75
+48c5aaf6-18ce-495f-b8fd-7ecbee07d960,Blender,Home Appliances,10,247.72,4887eb51-cfff-46ee-81c8-ef8686249df2
+4e86b20f-0ace-49e5-b64c-5bb1bd663162,Lipstick,Beauty,9,176.9,0299d02b-8658-447e-8751-75c04fc13238
+c4e4a544-eae2-4e64-a20f-9532c23b999d,T-Shirt,Clothing,1,124.64,5ef74727-e0af-4f7a-b51b-b9d92481026b
+ad085a21-5ed1-434b-9d4a-651c5c55ec37,Headphones,Electronics,5,140.86,8fc3c101-9ed0-4621-97ee-27da0dec1073
+87b72e67-ff80-465d-9483-cc857a5f4d5e,Eyeliner,Beauty,8,180.66,eb65660b-67fd-4fb7-91ab-2429ced4fc3e
+a2e70c95-4311-4c6d-abab-57fbe7610e2c,Moisturizer,Beauty,2,43.36,ea6fcbe9-f9c2-40ce-9781-c53f4ada6e0e
+dda03498-6554-4387-b092-651547c96690,Pen,Stationery,7,117,03b481f4-b667-4fa6-91a0-759bb6212851
+f86422a4-749c-4361-af47-79cfa96d916d,Puzzle,Toys,7,431.06,d45028a2-c763-4a73-b95d-3b4af9b8fd20
+20aefc23-281e-445a-bcbf-d8b0a24bb74c,Air Conditioner,Home Appliances,4,147.51,4b77eccd-96d8-4ac4-87f5-6fadc7907d09
+f125b7ec-9def-4e73-873e-aadc220acafc,Lipstick,Beauty,8,331.7,13316f4a-f58a-4147-8a70-f027e02c9bae
+c1d14e39-39b6-4c95-8d7d-a87e35d4fe0c,T-Shirt,Clothing,7,308.15,44882b2c-580b-48f0-a642-c9ac6517df8d
+cdbba91a-b8d0-47d5-96c3-97aca44e2099,Highlighter,Stationery,7,180.75,e030ccb7-fe90-46d8-91ff-8cff75915eb0
+0cdd301e-9d19-4be7-af51-0579bee4684f,Washing Machine,Home Appliances,4,329.81,5b3919df-5d99-48a5-a82d-c7311e20e076
+0bb4e9a9-637d-4435-8ee1-25e8653fc3c2,Bread,Groceries,6,218.8,75731f57-6361-4720-8493-af56fb91919b
+e6a00f26-27f4-4249-ae0a-d2535c7a2760,Foundation,Beauty,7,384.83,ce17c639-d022-4511-8c21-74af3e3c46cb
+4044d74f-c111-479a-abe3-370a14d6a0c0,Bluetooth Speaker,Electronics,5,433.92,45afcd58-5f0d-416a-b2cc-8aaa5d238f99
+6327bf01-3202-4588-9c9a-80f68388d9d5,Air Conditioner,Home Appliances,2,225.76,38dfad86-8144-4fa0-bbde-19e447490125
+39516d28-60d3-4a9f-aacf-f6260186c308,Smartwatch,Electronics,4,372.94,3b90e5c8-6a57-44d0-9bf3-7f9ab5671f81
+3857eadd-136b-4351-be65-676de4a6fedb,Biography,Books,8,118.2,e8e42f0c-fa65-4e5e-968c-846fe891d049
+5459db46-f121-4356-bd86-8f59314fe914,Microwave,Home Appliances,7,487.78,1a8b806a-f433-4cbe-ae3c-b582d2f4ae85
+1de936df-dd87-44db-a05b-ef26e60bb906,Washing Machine,Home Appliances,8,490.12,301539b1-ae62-444c-9368-2d0e1383cd4f
+56828d1b-85d8-4e66-97a5-959a1edb45e7,Blender,Home Appliances,10,114.22,972afa60-65f8-4cc8-9e33-dad110a48705
+e6b50092-5c7a-41fe-9daf-623bf8e5dbf9,Shampoo,Beauty,9,159.05,6d97d8c7-5d60-42ea-a29b-fe3666977f52
+51fa6586-d798-4cfd-80d8-360fa7c6227c,Lipstick,Beauty,6,261.37,f2f52ba6-c196-4dc9-8ec4-d7715bcd990b
+2b4a1112-aab9-4965-9af9-a4b9942f0947,Eraser,Stationery,8,161.99,5bb08d5c-e863-4e3f-bc0b-060733334eba
+7dfe5705-1597-4988-a403-866bdb842773,Science Journal,Books,1,289.81,0240e9be-59d0-4916-8e07-8bb1f072a03b
+b23aa3d4-1888-44c8-a34b-0cacd26a9671,Shampoo,Beauty,7,51.27,a867becd-7460-4866-9f24-62525b4a3f9d
+141840a4-3a61-4ab4-b21a-8c67ca0524a2,Science Journal,Books,6,93.39,b812f2e6-4f0b-464e-94a3-88fd14a758a7
+ad2aa8d1-5f05-4b29-8bd7-26605175d400,Washing Machine,Home Appliances,6,18.99,96ea0c5c-6078-4c4a-a691-d9c977ded815
+99b917f8-81c3-44db-a896-0eef6cb488fe,Science Journal,Books,7,269.62,55e949b2-a8ed-4ad3-a180-84348f964e05
+00e94ec6-6cd2-4b3f-b4c7-e6ade78b6218,Refrigerator,Home Appliances,10,304.91,9dca2537-4e9b-429e-9eb8-ca390ea41439
+01b6bb5a-1c7f-4506-bd6b-01a26639fe72,Highlighter,Stationery,2,371.83,95f4837c-ed05-4025-81df-569abdb23a8d
+7a9202b3-ff98-4797-95c4-1d49c63f367a,Microwave,Home Appliances,9,448.79,3d98ca71-2e28-450d-9e34-de549766a5ae
+b35e879c-ac8c-4b65-b6e9-f75a11782c27,Pen,Stationery,2,270.78,b54761b2-b7f1-4868-a69a-057c1b366a86
+41bd3fa1-b622-4990-8e3e-098e6d5a7bf4,Skirt,Clothing,7,194.05,d25802f6-df7b-445f-b29e-9899c05251ec
+0174d6ac-c5b8-475f-9720-e6d6afc2cdfd,Comics,Books,7,109,67859951-41d1-4e43-9260-c92918c067b5
+5038ad19-a131-404b-84c3-dab4493256a6,Microwave,Home Appliances,5,19.13,aaeac218-4215-4c28-840a-c5890078f0f8
+5314ea0b-717e-47a0-9240-a29dc319bad6,Tablet,Electronics,6,414.4,c38ac4cd-9279-4bd2-b45c-2fe3c8b832e9
+6fc0146d-a88e-42f5-8e65-4fb66ecb9eb4,Washing Machine,Home Appliances,8,322.17,e002b7fe-c213-4708-a3ba-b72944de5598
+3e608b91-fc2b-4958-bd85-d0fa08477aa7,Dress,Clothing,9,50.57,9497ebf6-96c5-41db-bd36-fab3c7e5cb93
+12f67c22-9a42-48e1-a73e-bc9a8612177f,Biography,Books,2,140.07,3d4d5b07-593f-4e8b-9bf4-458757b0a8e6
+4bc704fe-c94b-46ba-8ed7-8b6f2507a452,Puzzle,Toys,3,192.56,6e3861df-c4b9-472c-a68a-315e0b0e0068
+7344f3b1-410e-4aa6-9679-76ebfe77107a,Jacket,Clothing,6,104.82,7a7c48fd-c48d-4173-a0c8-cd4000d466fd
+1fef6cc4-aec5-4ef9-9aa7-59b18d9856cf,Refrigerator,Home Appliances,2,282,36b03a3c-81fa-48ce-bad9-e5a209d937a2
+8c403322-b607-42ac-b700-d5ad6e7f402f,Comics,Books,8,66.65,043857a9-804e-446c-81ba-9a7faac7d504
+bf2f5b75-557c-4091-b367-42131160054a,Fiction Novel,Books,8,93.44,793ca760-2dc9-49a6-8f27-8845199dcf24
+455a229c-d167-4c0f-8855-72a5570f8442,Doll,Toys,6,68.8,f13fb231-2d8d-4671-9a4c-6e8ff3ad85c0
+16f91b7a-75cb-4365-a643-ab295b7ea1f9,Eraser,Stationery,7,43.88,c925505c-50ec-4a16-8549-5906b1009f62
+50b14242-0f10-4186-bc85-c0b58ccfdb7b,Eyeliner,Beauty,4,229.63,b6d434b9-7d04-4c10-9164-883d29557cb4
+fb826291-fb0e-4dd1-8b19-9949e3e28e49,Air Conditioner,Home Appliances,8,388.73,31225306-aefe-44f9-bda1-d3a2c0312dcc
+4ce12398-8db4-4257-b42e-edb0ffefa487,Comics,Books,1,226.26,c50d854b-79cd-410c-a3a5-8b0c0bc3a1a6
+053bb5ee-8efd-4ee8-9fa6-641af44a2712,Bluetooth Speaker,Electronics,9,205.41,080bf0b9-c01f-4db7-ab52-1e3dc91453cd
+1a077c69-e7a9-47c2-8004-e59f7308c3e8,Milk,Groceries,4,217.6,abc475e6-dd90-4125-97ff-0203a7948ab4
+d2e1bfd5-484e-4463-9811-09fc9e03d4ae,Puzzle,Toys,8,74.79,fac5e1e9-ae99-4497-9c84-b0d7699be915
+8a723604-a718-4c56-b402-90ccd7fc0381,Refrigerator,Home Appliances,5,183.19,3c2f1212-c3d1-4b02-a5f4-71a03d96f6dd
+493ebb5f-9197-43fe-a49a-dd70da7dc0bd,Lego Set,Toys,10,466.28,25eac959-ffda-4d7d-8d00-566dde09a631
+77cf5c87-ceeb-4fb8-b666-528d326594ae,Biography,Books,2,97.87,0971bba2-1d55-4f08-97dc-24b3f947bd1a
+dc68ebf7-e3e0-4b0d-92bc-638f069bacb9,Action Figure,Toys,2,473.37,b407af98-ced9-4573-a4ce-99ea0955dc15
+57699bdb-f6eb-42aa-8e95-8fc7dbb151f9,Smartwatch,Electronics,1,170.55,bddcb15a-1e25-4f40-aef7-ca22e9a4f3f6
+023547d5-ebab-4dad-9599-2f5cd130addf,Skirt,Clothing,3,384.05,4460946e-6ee6-4720-add3-11d5511f1419
+03e4a96e-d7a8-4cf1-89c2-83fa98800123,Blender,Home Appliances,4,208.68,6960dfa1-d2a6-4310-a0c8-189106733cea
+e5ce1775-9d10-4628-8cc0-f8a60f1d5b5d,Puzzle,Toys,3,198.49,e32259d6-4ab5-474d-bb9d-c9eef3f4a6f1
+3e61fea6-6fac-4be7-a191-0f79f600638b,Comics,Books,9,97.88,2cff9ab2-5092-4311-b4fa-c66d6b9eef3e
+dd55db80-96e4-4c83-9939-7d1f508e9ab8,Refrigerator,Home Appliances,3,262.01,8edd710b-ff4a-4f83-9cc6-f73653904a50
+1ed6f379-e59c-4c47-9680-428682c44742,Microwave,Home Appliances,10,293.43,c46d4df2-7f83-4d3d-9395-a10b4fee7c4a
+2cc7d35b-b261-4aee-b821-050c9da8d974,Microwave,Home Appliances,10,249.25,7f8e1844-7876-4b23-8659-19ded1ac719a
+ec39047c-bd20-4c09-b971-7d207e85fce1,Comics,Books,10,464.76,12f9f69c-1460-4cd2-897a-785668e1728a
+5297b26c-a496-475f-8e96-9b8ea5e60177,Skirt,Clothing,8,21.29,237d3214-c058-4e67-b61b-a0d13be2e656
+2a0696c5-96b6-4aff-83e3-b7a539105321,Action Figure,Toys,10,422.55,dfc56e0a-20cc-4e6c-a730-f55d75ae6bfe
+31675753-e1cd-4fc6-bf27-d0bd492bb3e7,Headphones,Electronics,4,5.25,adfbd5d5-4d55-4bf0-a9f5-36cc6484d0e6
+a811666e-1d21-4660-86eb-eda72254f8fa,Smartwatch,Electronics,3,125.21,db19884d-fade-48b9-b658-18a00faf5117
+a218ba7a-b704-4abc-8a3c-36ac76c5accd,Jeans,Clothing,10,115.88,91e2d102-96f6-41b8-b2f1-6b368aeba654
+fc9c3c64-283e-4a5d-86f1-1fe9fbc8555b,Foundation,Beauty,2,431.66,b19507cf-145d-43db-8dce-4a548c33f973
+c99b371a-8283-4a16-9d7f-8dd178d18834,Biography,Books,7,462.68,28e77086-a91f-412e-b7f0-233e442edbb2
+11253e78-5cc9-4242-b2e4-5a2981fb24fa,Bluetooth Speaker,Electronics,6,249.25,0233df5f-9a7c-4420-a886-5b14d8a83803
+ae8bb46d-eec0-4964-ac47-c50ea7bb9026,Microwave,Home Appliances,3,189.46,e3e77c66-265c-4cd3-8dc3-366215a11fec
+395b7fa1-3787-4c6b-aaa4-444723e0aa55,Chicken,Groceries,8,198.45,4ca5e7c6-c124-4a8e-9b49-ee6cc1200b8d
+8497afc7-9baa-42ef-8b82-35bb644b90d9,Comics,Books,2,77.56,f791f114-82e4-47e4-b1b3-76c5e64f0193
+526df6fa-02d8-4de2-b368-447a56ea5076,Headphones,Electronics,3,477.15,adb1d94e-9829-4039-bf37-cf78f28e3559
+bbc11daa-8dd6-403a-b955-7dd070bdb97d,Bluetooth Speaker,Electronics,8,355.34,6bce59e2-2cbe-4fb6-8377-91935596ffb8
+7bd1ec70-f33d-4fde-ab81-1eff7d6246a3,Bread,Groceries,1,15.53,b30e927a-ddac-4e74-abb9-a9b9772f1b94
+cbaed33e-4c4e-4e4c-b8fa-480a0dce0b25,Air Conditioner,Home Appliances,2,427.68,1b8a1f3f-7375-463b-94be-14f75f3103ba
+48b44f47-5978-4acb-83ac-be6694320280,Sticky Notes,Stationery,7,272.72,698d1f7c-ee90-43dc-bccd-8520dcbc32ba
+da82df9b-6dff-4630-8445-dd20ec44ce30,Air Conditioner,Home Appliances,1,480.54,157529b4-5971-4344-a974-2d8207714c8d
+46928626-a470-4ea5-93da-a93ea8fbe6bc,Smartwatch,Electronics,3,267.77,7dc36f9a-fb36-470a-a26e-1bb469ca3bc5
+742f1d2f-cf98-4abc-a4d8-1e32f52799a0,Bluetooth Speaker,Electronics,5,193.17,859f97b1-6a8e-4926-ad5d-e14626a76d38
+f68fe1bc-6a28-4ad2-9675-5d7494af45b3,Textbook,Books,2,43.75,082d204a-d9f3-40e2-ad6e-5921c437c707
+43dc13b5-8c5c-4eab-ba4e-2c562c7a4678,Shampoo,Beauty,4,212.57,02e326af-b14d-4100-a75e-1f3a697020b5
+5e33fcf3-4c03-4a5a-9ce3-5c0c7a6705c8,Dress,Clothing,5,46.44,c450c96e-ab6d-4626-9005-02fa931e1cbb
+2a3a7e6a-c5eb-4332-92b0-21bc2ffe9410,Headphones,Electronics,4,308.86,278249f4-cf03-4f41-89d1-9dfc5e4c093d
+f4288b3e-407f-4876-b762-d7f6c473da37,Shampoo,Beauty,10,432.48,1d71cd33-397b-4981-a6ba-018c55f5d6dd
+fced8199-1403-422b-85cd-195e6d3de681,Lipstick,Beauty,3,235.55,7d4e87f8-8f01-4cef-b42a-fb46da814a07
+b1997e2c-cbbf-4685-954b-552e1364b29e,Highlighter,Stationery,10,226.34,09e7b5dd-bcdb-496e-a0f9-f345ab235e35
+c8fa3184-88e0-4b29-9d55-b7c2bd8b4954,Blender,Home Appliances,7,195.11,3390d0c0-071e-4912-8dfc-34c1414d2cdc
+fef37a60-8375-45b0-8594-5f21f93799e9,Air Conditioner,Home Appliances,6,118.01,c6e98884-4047-4b53-8b7e-3c7d31338ef7
+dc4e6daa-8b68-4247-8887-2987cb6c64d3,Chicken,Groceries,5,468.12,e79f990d-bc62-4292-9a19-cae1062f40ff
+9d7c414b-aeee-49ae-b2f5-1fd6dacb4bff,Rice,Groceries,6,315.34,b8576510-a0c3-45af-ab77-d5a0d9db55ab
+12cafeb1-1bdb-4753-a88c-9cef692f8a81,Air Conditioner,Home Appliances,2,477.83,e7647162-75a9-4ac2-90d3-e9ae4b817e58
+70a3ba16-fc25-41df-b66a-39d0dbc9c654,Eggs,Groceries,8,220.18,6abc0284-daf9-4413-91fb-2ceec1aa6a3d
+a81669cf-7ad7-47be-93eb-970ed9a5de7c,Comics,Books,1,62.72,c1f15dce-298b-4ba9-9d7c-b3680d496e05
+8497dbac-ae81-4920-b7ea-82834418a380,Tablet,Electronics,3,382.01,13032564-e3b0-4f48-a591-cde187343799
+e4547dbe-9455-490c-a0a9-9540d4eaacee,Bread,Groceries,2,354.22,42a12581-ae91-46c6-adb5-e112688697d2
+7b514d19-3e47-41c0-bc9a-47280a3d5022,Highlighter,Stationery,5,135.76,b9eeeb51-8f14-4e44-a53c-5a0e750f9354
+ee06221a-56ae-4ccc-8c50-5822eb22da52,Doll,Toys,6,149.36,e873f107-4f92-4143-bdde-7c88a6e8175b
+3ac54d76-f229-4546-b3ea-9de802edb167,Chicken,Groceries,4,373.8,3f54a11b-36d4-4194-9795-5ed435719009
+fc9ea0c7-8887-4391-a773-cb0df299479c,Eyeliner,Beauty,9,34.5,0db23ead-23ea-424e-976c-d855c73e6d03
+acec143c-5605-472f-83f5-7c6f2e33433a,Dress,Clothing,9,11.91,832be5e6-1b65-409e-abb3-25a7fd964870
+91534983-798a-404b-8083-92d90e686a97,Lego Set,Toys,1,320.39,0faeb269-46a7-4510-8a9a-93f597a595c2
+f4014dce-c880-4477-a91a-aa73e5975c6b,T-Shirt,Clothing,6,73.15,dc10a51b-8e8c-4abc-8154-c2a98ab4e80b
+92f9bd13-9e4e-4675-9770-78bf13bf0bf2,Laptop,Electronics,9,211.74,eabda593-7a64-4e56-b4f2-40767bb7dfa0
+bbdfc368-a360-4b56-8c90-e53ddcf47c0f,Air Conditioner,Home Appliances,10,56.57,99f12818-58c5-4742-b636-3474113e49af
+04465b0f-4d10-4766-a65e-79d9c0b876a8,Pen,Stationery,3,245.21,3809c485-18a6-4058-a0df-94b81034723d
+0d97701c-8590-4ffc-9538-b044f5192906,Comics,Books,6,52.92,dd4502f7-063d-4125-af6a-b56885603db5
+33fc037d-2590-4a79-b69e-631ab6f08d3f,Eyeliner,Beauty,4,497.8,f1bccadf-06be-4c71-86e8-2f1b5a4a5018
+39cb2b21-82fb-48bb-b5a3-f37049ecdd26,Washing Machine,Home Appliances,4,202.52,cd16a28f-9095-4f7e-b22d-81e1947a9c27
+7e1151db-3073-4f21-b211-737d4cff7bd7,Skirt,Clothing,8,177.47,f0548b40-8ddc-4b2d-9348-52cf9035f6cb
+fe17c72a-17f7-4ef3-8461-7d37c4e28d16,Comics,Books,6,487.05,323d193b-da4c-4836-834c-ec348477bef7
+f77bf5ef-8281-42c7-ad11-a4225f025a68,Textbook,Books,4,235.54,3952c22a-2c94-4ded-a48d-c361c30f003f
+634e8022-f5f9-4fcf-92d0-912ca7f90973,Eraser,Stationery,3,142.03,4e09e296-7750-4dcd-a4ef-09c506f694be
+dd929545-3a79-4e9c-adff-6dc72f1f4de6,Smartwatch,Electronics,1,46.22,d5c8b097-95ad-4e68-82da-c52f185c962b
+939e8e31-fa5c-496f-96e1-7a217f6efbbd,Foundation,Beauty,5,436.75,f02626d0-0ad8-41a1-954f-eb7de930079d
+67df8689-0d02-4b14-b5d3-2d8e66029ee6,Chicken,Groceries,1,46.86,0683cb8e-f813-4c05-bb37-49bbd56a9989
+21736d72-ebfe-4a78-b64a-da092feb3a3f,Notebook,Stationery,2,87.41,5778847d-cddd-44b5-b775-154c4e9155d8
+55903204-dc50-4b86-ba20-beaf2ae8a58b,Lego Set,Toys,9,279.56,565a433f-cb40-402c-acd1-674a20e00ac5
+aa942f21-df40-40c7-af2d-21e2c9e9ccc3,Lipstick,Beauty,2,210.24,048b44ff-5511-4a5b-88b5-cdbd5698be56
+84f9dada-978d-4e01-81af-43e95afa7f24,Doll,Toys,7,65.74,7e5c8de9-1587-4ffa-bbbf-e856a20c0436
+0778f8ae-d4d0-4d30-8a2f-a90a687690d7,Comics,Books,6,91.2,db972044-283a-44e5-bab4-b0ebda5d6ad5
+9ff08563-264c-42ca-935a-568d442970bc,Skirt,Clothing,7,338.45,b76c2797-638d-48e9-9828-74509ca8000e
+66d7fac6-c033-4719-9151-66db5b6311a2,Smartwatch,Electronics,1,16.34,56b1a136-325e-43a2-a92d-7a1028ad0c5a
+8a275c24-11f5-4fa0-bdfb-8301a04a03e6,Eyeliner,Beauty,5,42.71,dea4c748-bd3d-4315-bd32-c0c9c3eeddc5
+433a52fa-f518-4bf4-ba5e-c1c186ff9fc8,Puzzle,Toys,6,161.88,bd982582-c04e-420e-b22c-fe33d8891f3e
+99cb3d9c-bcbc-4d49-8b90-504060c21f23,Pen,Stationery,5,28.97,e3960ea7-ee1c-4a44-b5c3-fe96382e28e6
+c855156b-b525-4939-9115-c9da3866bbf8,Eraser,Stationery,4,425.46,45aaab02-9480-4d1b-9e1a-6f0d5cc32ff8
+41f3d099-aa1f-4fac-abdb-b50ea87e1231,Shampoo,Beauty,9,74.31,353e5899-5798-4579-8d9b-29c6a3e8c8e4
+ece05f0a-bb7f-4e42-a1a3-dcf8328fe59a,Bread,Groceries,1,394.05,60d235c4-376c-4791-8028-4e0b6af98587
+414a21e3-7597-4470-95d7-4a08102ac98f,Dress,Clothing,5,293.3,32e61b1e-25d4-4afc-9bfe-0d330efacdb6
+ca4a19db-d5ba-496c-807a-7a3420cc2a29,Moisturizer,Beauty,9,247.3,21c2fc92-0dbd-47ed-b717-853a1e6d9e78
+35a6bdf1-f477-4aed-a2fb-f3efde1f8872,Fiction Novel,Books,2,214.71,5eb6e349-02d7-4002-9f96-ee6937f92f53
+3684ef74-9a20-4249-8759-91c8c0534af2,Action Figure,Toys,9,30.39,b70fcb6b-a534-47c8-8f64-4ed216b83992
+ef5e1b40-11d0-4c7d-827f-d047944694b9,Tablet,Electronics,1,123.05,a7080407-c311-4c6b-b6d7-b511e03caabf
+90f5175b-66a5-40be-8710-cc4d0e199c7b,Smartwatch,Electronics,2,413.11,e1370281-0187-4c30-8ac1-cc57c6a5a790
+2b491109-d73a-48fb-bfc7-feb17756e327,Apples,Groceries,8,12.52,a1e23fee-866b-454e-bd46-71ac2b532d47
+1215de2f-bdda-40ff-b91b-88b91147ee41,Eggs,Groceries,9,209.88,5cd6ae25-e7ad-482c-97f6-0dab8b00983b
+30853d9b-bd78-4993-aa21-f88842b9d629,Doll,Toys,8,144.44,cc932c14-7889-4865-8768-68307c31e366
+5b11e16e-2668-42e7-98ad-34fcc419c368,Blender,Home Appliances,7,238.01,9f421e89-3796-4148-bf07-8db8881abf16
+44a78364-d34a-4097-9c5b-0debbda0ed47,Dress,Clothing,3,356.04,0b65e997-d4c8-4fe7-9972-7dd9cfe086c8
+96705f37-dd5a-4838-9c81-b865b454f283,Sticky Notes,Stationery,6,105.22,ca279245-e786-449f-bb57-3b24025987b2
+df6475f2-eac6-411f-a4ec-07891656170a,Eraser,Stationery,4,400.47,8263387b-bfdb-4729-a2fe-ded7dec5afd7
+ba19640b-b61c-4bc8-a4c7-2bb826bac37c,Washing Machine,Home Appliances,9,491.55,87044fe9-bbf3-492d-b1c1-007f70b548e1
+1a2f03a0-5e36-4300-92ad-f29be79fcb17,Foundation,Beauty,1,94.72,9091fe53-4a9b-4a1d-bcdc-c27f1ab4f3ba
+07c113d6-5fe1-4f2a-9dc3-a52bb35514c9,Lego Set,Toys,3,125.46,d05d8abc-332d-478a-bf0f-a3a3d8991a73
+88c746ff-0383-40d5-9e51-ffbc8a8a0522,Rice,Groceries,3,441.13,b72c1df5-29a8-4e94-9036-2d1eb67fc430
+7ba14233-6727-4aae-abf2-735a562d9fe4,Chicken,Groceries,3,373.77,2f417ab6-6523-4b95-af8b-f55dd4eb74ae
+3c0e496f-8dd4-42a1-ac83-967348e663f4,Apples,Groceries,5,400.31,67517cd4-cb52-45bc-90c2-0165fba4cd2d
+7e8e08c3-0db1-4b5f-9cff-68d1d2965707,Comics,Books,8,396.04,7e628772-5a99-4c63-b335-5708c6c13713
+dd23eed4-014d-46dd-995e-f6a8b0808ca1,Rice,Groceries,7,88.07,6743e178-59d7-4aa8-966a-0e0c145b16e8
+407fa781-2986-4d14-b57c-fe541bbde985,Jeans,Clothing,7,110.18,168a66ed-d2e6-4b8c-b518-1db6671eb2d7
+d9d1da34-f69d-4193-bd56-8631cf82a3c2,Pen,Stationery,8,56,b47c9e14-9d7f-4059-9b7e-635b0b411e89
+6b31333c-4a64-4113-ad35-01ac4c8e5263,Eggs,Groceries,9,10.77,595e2333-f51f-48ad-a12b-6e2e5f399028
+2d629e67-7d18-4917-9954-08ec5c2804ed,Apples,Groceries,1,480.97,a5ab4fce-6fa5-47dd-8e15-5049fbdcb360
+e6f6e8c5-7570-463a-8db7-623c055d74b2,Tablet,Electronics,7,227.94,0181a74a-705b-4325-8a48-617a98ee8054
+d101c32c-78df-4553-a26e-d3005b35bddd,Lipstick,Beauty,7,486.63,2997dcf9-aa7b-4607-a7c4-29e61a188af9
+2373d476-e224-4745-94e7-7d344cc5adc9,Dress,Clothing,2,446.8,dbca9131-fc0c-47bc-b53b-451b11e55f80
+a5c8f8ed-2425-4f47-88a0-b1f09f79f54d,Sticky Notes,Stationery,10,125.12,24e67128-6511-46d8-bb22-e274efb36377
+daceb3ee-6f73-4b6f-9d37-48dbb558c7e5,Jeans,Clothing,1,382,e98f44cf-564b-4b71-9aa8-74185cbaa234
+0847a6a6-2252-45fc-ac32-86ac71948d3b,Doll,Toys,9,405.51,d99388d8-4c7d-45f4-a4ab-008ba09a0386
+a2b3aa26-9ed8-465f-a455-eb70a1f7d0d6,Eggs,Groceries,8,356.52,d9a1f48e-89e5-4e33-bbd4-0996c9e6dbd9
+b211e8e8-20ca-47d7-9127-5ca940476a27,Tablet,Electronics,3,301.91,d2930536-b92c-4019-aac4-4005683c8b8e
+8d2f2c23-b8b0-42fd-8f23-2b75fdc149ec,Skirt,Clothing,5,11.68,068ab24c-4db4-40d8-93d8-af9901be502f
+796a685e-fdeb-47e5-addc-99667d6f4ed1,Rice,Groceries,6,335.09,95b751e3-e3b0-4055-9605-334e79225625
+ddbc19b9-e97a-41ac-be6e-4a931496e018,Eggs,Groceries,9,322.62,48fec6a5-c4c7-4073-8cb2-0a330495a738
+a68cc28d-000b-4454-9e44-344460b53bd7,Lipstick,Beauty,3,16.14,4c14a281-1898-4b14-b83e-da9694979620
+54d03230-a41b-4cd3-964a-3481bf1d3bdb,Comics,Books,4,306.24,46a28f0b-0c03-4814-9cc6-70dfe2c226f1
+1ce6b661-2ff7-4d0a-9a33-1235a9ff13a7,Board Game,Toys,5,222.98,19f990eb-0113-4099-8088-0dbe727dd30f
+1699e387-97f3-4694-b17e-61cf521c3fe4,Jacket,Clothing,5,469.09,7547d287-66f0-496d-9ada-c2d278eea1b7
+26cccfb6-9999-4d19-a283-d8779c89eb94,Washing Machine,Home Appliances,6,177.76,b296e9e4-445c-4bc5-9a1f-d19042d1362e
+18c27c4d-dd30-4d8e-a9bd-b70b313dd9e4,Dress,Clothing,7,291.48,7169f905-9b35-4c5b-a97a-644ccceb1b9a
+85e9a869-ce7c-472f-8c33-b7ae05ee4675,Bluetooth Speaker,Electronics,9,152.46,f2963f89-4ff8-497e-908a-d1a1d1bb7937
+6067da4a-3fa6-4526-a2c5-1c80d163c292,Pen,Stationery,4,98.46,880bf73c-e165-43c7-b91e-efd65c61a8d6
+0643c6d7-855e-4048-8b3e-fa2ac899ef7b,Highlighter,Stationery,5,259.61,05cfea6e-ad02-4921-b11c-f3019398c61c
+c495e281-0849-44bb-887f-147172ce730f,Doll,Toys,3,404.82,47a5feeb-af57-430e-9b94-99da2e889e1a
+130bd9bc-6784-4e32-8691-7d9bfea0a299,Headphones,Electronics,9,418.92,90c90a58-aeb2-45af-9f59-8db929c10bef
+315ef832-3a2c-40f2-b442-dbdcd73f049d,Apples,Groceries,8,458.95,b6948f7d-5f63-4ab2-a075-b99aa3139c76
+dc628c23-3637-4b6c-a4fd-c82558cf80c4,Jeans,Clothing,7,154.32,97433317-95b5-48c1-a95c-0398000c93ee
+5ae9d535-7333-49ac-bc68-ca4717a62fe2,Foundation,Beauty,9,30.82,ada7bedf-302d-43b2-b5b5-6709e4941321
+5ae9d535-7333-49ac-bc68-ca4717a62fe1,Jeans,clothing,1,154.32,ada7bedf-302d-43b2-b5b5-6709e4941322
+5ae9d535-7333-49ac-bc68-ca4717a62fe5,Biography,Books,1,133,ada7bedf-302d-43b2-b5b5-6709e4941323
+5ae9d535-7333-49ac-bc68-ca4717a62fe6,Biography,Books,1,133,ada7bedf-302d-43b2-b5b5-6709e4941324
+7ba14233-6727-4aae-abf2-735a562d9fe7,comics,Books,1,306,ada7bedf-302d-43b2-b5b5-6709e4941325
+7ba14233-6727-4aae-abf2-735a562d9fe8,comics,Books,6,306,ada7bedf-302d-43b2-b5b5-6709e4941326
+7ba14233-6727-4aae-abf2-735a562d9fe9,comics,Books,4,306,ada7bedf-302d-43b2-b5b5-6709e4941327
+7ba14233-6727-4aae-abf2-735a562d9fe10,comics,Books,7,306,ada7bedf-302d-43b2-b5b5-6709e4941328
+7ba14233-6727-4aae-abf2-735a562d9fe11,comics,Books,4,306,ada7bedf-302d-43b2-b5b5-6709e4941329

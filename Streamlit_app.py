@@ -53,7 +53,8 @@ st.markdown("""
 
 
 # === FIXED CONFIG ===
-FIXED_DATABASE = "XYZ" # Replace with your actual database name
+FIXED_DATABASE = "Harshit" # Replace with your actual database name
+
 
 st.title("Data Insight Assistant")
 st.markdown("Select tables, ask questions, and visualize insights from your database.")
@@ -68,22 +69,34 @@ except Exception as e:
 # === STEP 2: SELECT TABLES ===
 selected_tables = st.multiselect("Select one or more tables from the database", all_tables)
 
-# === STEP 3: PREVIEW SELECTED TABLES ===
+# === Function to get table column names ===
+def get_column_names(table_name):
+    try:
+        # Assuming your 'Gemini' module has a function to fetch column names
+        columns = execute_query(f"""
+            SELECT COLUMN_NAME
+            FROM INFORMATION_SCHEMA.COLUMNS
+            WHERE TABLE_NAME = '{table_name}'
+        """, FIXED_DATABASE)
+        return [col['COLUMN_NAME'] for col in columns.to_dict('records')]
+    except Exception as e:
+        st.warning(f"Could not retrieve column names for '{table_name}': {e}")
+        return []
+
+# === STEP 3: PREVIEW SELECTED TABLES (COLUMN NAMES ONLY) ===
 if selected_tables:
-    st.markdown("### Table Previews (Top 10 Rows)")
+    st.markdown("### Table Columns")
     for table in selected_tables:
         st.markdown(f"**📘 {table}**")
-        try:
-            preview_sql = f"SELECT TOP 10 * FROM {table}"
-            preview_df = execute_query(preview_sql, FIXED_DATABASE)
-            st.dataframe(preview_df, use_container_width=True)
-        except Exception as e:
-            st.warning(f"Could not preview '{table}': {e}")
+        column_names = get_column_names(table)
+        if column_names:
+            st.markdown(", ".join(column_names))
+        else:
+            st.warning(f"Could not display column names for '{table}'.")
 
 # === STEP 4: ASK QUESTION ===
 if selected_tables:
     user_question = st.text_input(" Drop your question here..", placeholder=" eg:Show total sales by category")
-                                  
 
     if user_question:
         with st.spinner(" Generating SQL..."):
@@ -163,7 +176,3 @@ st.sidebar.title(" Feedback")
 feedback = st.sidebar.text_area("How can we improve?", height=100)
 if st.sidebar.button("Submit Feedback"):
     st.sidebar.success(" Thanks for your feedback!")
-
-
-
-

@@ -3,8 +3,8 @@ import google.generativeai as genai
 import pandas as pd
 
 # ===== CONFIGURATION =====
-GEMINI_API_KEY = ""
-SQL_SERVER_NAME = "Hp\SQLEXPRESS"  # Use raw string for backslash
+GEMINI_API_KEY = "AIzaSyDrEDhqFP6hkwj11a-EbHO8t7ehEPvrBUQ"  # Add your Gemini API key here
+SQL_SERVER_NAME = r"Hp\SQLEXPRESS"  # Raw string for backslash
 SQL_DATABASE = "Harshit"
 ODBC_DRIVER = "ODBC Driver 17 for SQL Server"  # Ensure this driver is installed
 
@@ -52,55 +52,100 @@ def list_tables(database):
 # ===== GENERATE SQL QUERY FROM GEMINI =====
 def generate_sql_query(question):
     prompt = f"""
-    You are a helpful SQL assistant. Write a mySQL Server compatible query for this question.
-    analyze the schema and generate the mySQL query accordingly.
+-- Improved Prompt:
 
-CREATE TABLE TransactionLog (
-    Transaction_ID VARCHAR(50) NOT NULL,
-    Customer_ID VARCHAR(50) NOT NULL,
+-- You are an expert SQL developer working exclusively with Microsoft SQL Server and the ODBC Driver 17 for SQL Server.
+-- Your task is to generate 100% accurate and executable T-SQL queries that are compatible with this environment,
+-- strictly adhering to the provided database schema.
+
+-- Database Schema:
+
+CREATE TABLE customers (
+    Customer_ID NVARCHAR(50) PRIMARY KEY,
+    Name NVARCHAR(50),
+    Phone NVARCHAR(50),
+    Address NVARCHAR(100)
+);
+
+
+CREATE TABLE shopping (
+    Shopping_ID INT PRIMARY KEY IDENTITY(1,1),
+    Customer_ID NVARCHAR(50) FOREIGN KEY REFERENCES customers(Customer_ID),
+    Product NVARCHAR(50),
+    Product_Category NVARCHAR(50),
+    Units INT,
+    Unit_Price FLOAT
+);
+
+
+CREATE TABLE transactions (
+    Transaction_ID NVARCHAR(50) PRIMARY KEY,
+    Customer_ID NVARCHAR(50) FOREIGN KEY REFERENCES customers(Customer_ID),
     Transaction_Date DATE,
-    Transaction_Type VARCHAR(50),
-    Amount FLOAT,
-    Payment_Mode VARCHAR(50),
-    Status VARCHAR(50),
-    Channel VARCHAR(50),
-    Merchant_ID VARCHAR(50),
-    PRIMARY KEY (Transaction_ID),
-    FOREIGN KEY (Customer_ID) REFERENCES Customers(Customer_ID)
+    Transaction_Type NVARCHAR(50),
+    Payment_Mode NVARCHAR(50),
+    Status NVARCHAR(50),
+    Channel NVARCHAR(50),
+    Merchant_ID NVARCHAR(50)
 );
 
-CREATE TABLE CustomerTable (
-    Customer_ID VARCHAR(50) NOT NULL,
-    First_Name VARCHAR(50),
-    Last_Name VARCHAR(50),
-    Email VARCHAR(50),
-    Phone VARCHAR(50),
-    Address VARCHAR(100),
-    City VARCHAR(50),
-    State VARCHAR(50),
-    Registration_Date DATE,
-    PRIMARY KEY (Customer_ID)
-);
+-- Instructions:
+anazlyze the schema and write a T-SQL query to answer the user's question.
+-- 1. Use the provided schema to understand the tables and their relationships.
+-- 1. Focus solely on generating T-SQL queries for Microsoft SQL Server.
+-- 2. Use only the tables and columns defined in the provided schema.
+-- 3. Employ appropriate SQL Server syntax (e.g., TOP, NVARCHAR, IDENTITY, GETDATE()).
+-- 4. Utilize JOIN clauses based on Customer_ID to link tables where necessary.
+-- 5. Interpret "total spent" as the sum of (Units * Unit_Price) from the shopping table.
+-- 6. Define "least active" customers as those with the minimum number of entries in the transactions table.
+-- 7. Define "most active" customers as those with the maximum number of entries in the transactions table.
+-- 8. If a query requires arithmetic operations or aggregate functions (SUM, COUNT, MIN, MAX, AVG), apply them correctly.
+-- 9. Return only the T-SQL query. Do not include explanations or descriptions.
+-- 10. If the question is ambiguous or cannot be answered with the given schema, respond with "I cannot answer that."
+-- 11. Ensure the query directly addresses the user's request and returns the exact number of items asked for (e.g., if "least active" is requested, return one result).
 
-CREATE TABLE SalesTable (
-    Sale_ID VARCHAR(50) NOT NULL,
-    Customer_ID VARCHAR(50),
-    Product_ID DECIMAL(10, 2),
-    Product_Name VARCHAR(50),
-    Category VARCHAR(50),
-    Quantity TINYINT,
-    Unit_Price FLOAT,
-    Discount FLOAT,
-    Sale_Date DATE,
-    PRIMARY KEY (Sale_ID)
-);
+-- Example Questions (User will ask one of these or a similar question):
 
+-- 1. Show the names and phone numbers of all customers.
+-- 2. Find the total number of shopping transactions.
+-- 3. List all products purchased by a specific customer (provide Customer_ID).
+-- 4. Calculate the total amount spent by each customer.
+-- 5. Identify the customer who has made the most shopping transactions.
+-- 6. Identify the customer who has made the least shopping transactions.
+-- 7. Find the most expensive product purchased and its price.
+-- 8. List all transactions that occurred on a specific date (provide date).
+-- 9. Show the different payment modes used in transactions.
+-- 10. Find the average number of units purchased per shopping transaction.
+-- 11. Get the names of customers who have made at least one transaction.
+-- 12. Get the names of customers who have not made any transactions.
+-- 13. Find the most frequent product category purchased.
+-- 14. List customers and their last transaction date.
+-- 15. Find the merchants with the highest number of transactions.
 
-    Only output the mySQL code, nothing else.
+you have to analyze all the columns and tables in the schema to  write a every single SQL query to answer the question.
+always take care of the quantity of returned rows are asked in the question.
+-- 16. Find the customers who have spent the most in total.
+Use joins wherever relevant (via Customer_ID which links the three tables).
+increase the creativity of the response to make it more human-like.
+-- Do not use any other database or table names other than the ones provided in the schema. 
+-- Do not use any other SQL functions or keywords other than the ones provided in the schema.
+-- Do not use any other SQL Server specific functions or keywords other than the ones provided in the schema.
+always cross check the answer you provide and what is asked (ususally the question is asked in a human-like way).
+-- Do not use any other SQL Server specific functions or keywords other than the ones provided in the schema.
+dont youse select top 1 every single time use according to the need 
+---
+User question:
+{question}
+"""
 
-    Question: {question}
-    """
-    response = model.generate_content(prompt)
+    response = model.generate_content(
+        prompt,
+        generation_config={
+            "temperature": 1.7,  # Balanced creativity + accuracy
+            "top_k": 55,
+            "top_p": 0.95
+        }
+    )
     sql_query = response.text.strip().strip("```sql").strip("```")
     return sql_query
 
