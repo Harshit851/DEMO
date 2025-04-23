@@ -5,23 +5,10 @@ from Gemini import list_tables, generate_sql_query, execute_query
 import requests
 import time
 import datetime
-
+from PIL import Image  # Import Pillow for image handling
 
 # === PAGE SETUP ===
-st.set_page_config(page_title="Data Insight Assistant", layout="centered")  # Moved to the top
-
-def load_lottieurl(url: str):
-    try:
-        r = requests.get(url)
-        if r.status_code == 200:
-            return r.json()
-        else:
-            st.error(f"Failed to load animation: {r.status_code}")
-            return None
-    except Exception as e:
-        st.error(f"Error loading animation: {e}")
-        return None
-
+st.set_page_config(page_title="Data Insight Assistant", layout="centered")
 
 st.markdown("""
     <style>
@@ -51,10 +38,8 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-
 # === FIXED CONFIG ===
 FIXED_DATABASE = "Harshit" # Replace with your actual database name
-
 
 st.title("Data Insight Assistant")
 st.markdown("Select tables, ask questions, and visualize insights from your database.")
@@ -72,7 +57,6 @@ selected_tables = st.multiselect("Select one or more tables from the database", 
 # === Function to get table column names ===
 def get_column_names(table_name):
     try:
-        # Assuming your 'Gemini' module has a function to fetch column names
         columns = execute_query(f"""
             SELECT COLUMN_NAME
             FROM INFORMATION_SCHEMA.COLUMNS
@@ -83,16 +67,29 @@ def get_column_names(table_name):
         st.warning(f"Could not retrieve column names for '{table_name}': {e}")
         return []
 
-# === STEP 3: PREVIEW SELECTED TABLES (COLUMN NAMES ONLY) ===
-if selected_tables:
-    st.markdown("### Table Columns")
-    for table in selected_tables:
-        st.markdown(f"**📘 {table}**")
-        column_names = get_column_names(table)
-        if column_names:
-            st.markdown(", ".join(column_names))
-        else:
-            st.warning(f"Could not display column names for '{table}'.")
+# State to control ER Diagram visibility
+if 'show_er_diagram' not in st.session_state:
+    st.session_state['show_er_diagram'] = False
+
+# Placeholder for the ER Diagram in the main area
+er_diagram_placeholder = st.empty()
+
+# Sidebar button to toggle ER Diagram
+with st.sidebar:
+    if st.button("Show ER Diagram"):
+        st.session_state['show_er_diagram'] = not st.session_state['show_er_diagram']
+
+# Display ER Diagram in the main area based on state
+if st.session_state['show_er_diagram']:
+    try:
+        image = Image.open("er_diagram.png")
+        er_diagram_placeholder.image(image, caption="ER Diagram", use_column_width=True)
+    except FileNotFoundError:
+        er_diagram_placeholder.error("ER Diagram image not found. Please ensure 'er_diagram.png' is in the correct location.")
+    except Exception as e:
+        er_diagram_placeholder.error(f"Error displaying ER Diagram: {e}")
+else:
+    er_diagram_placeholder.empty() # Clear the placeholder when not showing
 
 # === STEP 4: ASK QUESTION ===
 if selected_tables:
@@ -101,7 +98,6 @@ if selected_tables:
     if user_question:
         with st.spinner(" Generating SQL..."):
             try:
-                # Add table context to the question
                 table_context = ", ".join(selected_tables)
                 prompt = f"Use the following tables: {table_context}. {user_question}"
                 sql_query = generate_sql_query(prompt)
@@ -114,7 +110,7 @@ if selected_tables:
         st.markdown("### Generated SQL Query")
         st.code(sql_query, language="sql")
 
-        st.markdown("### Explected Result")
+        st.markdown("### Expected Result")
         if not result_df.empty:
             st.dataframe(result_df, use_container_width=True)
 
@@ -134,14 +130,17 @@ if selected_tables:
                 chart_data = result_df[[x_col, y_col]].dropna()
 
                 if chart_type == "Bar":
-                    st.bar_chart(chart_data.set_index(x_col))
+                    st.bar_chart(chart_data.set_index(x_col), use_container_width=True)
                 elif chart_type == "Line":
-                    st.line_chart(chart_data.set_index(x_col))
+                    st.line_chart(chart_data.set_index(x_col), use_container_width=True)
                 elif chart_type == "Pie":
-                    pie_data = chart_data.groupby(x_col)[y_col].sum().nlargest(10)
-                    fig, ax = plt.subplots()
-                    pie_data.plot.pie(autopct='%1.1f%%', ylabel='', ax=ax, figsize=(6, 6))
-                    st.pyplot(fig)
+                    try:
+                        fig, ax = plt.subplots()
+                        pie_data = chart_data.groupby(x_col)[y_col].sum().nlargest(10)
+                        pie_data.plot.pie(autopct='%1.1f%%', ylabel='', ax=ax, figsize=(6, 6))
+                        st.pyplot(fig)
+                    except ImportError:
+                        st.warning("Matplotlib not found. Cannot display pie chart.")
 
                 # === STEP 7: INTERPRETATION ===
                 st.markdown("### 🧠 Basic Interpretation")
@@ -166,13 +165,6 @@ if selected_tables:
 else:
     st.info("Please select one or more tables to begin.")
 
-
 st.sidebar.title("Navigation")
 st.sidebar.markdown("Explore your database:")
 st.sidebar.markdown("- 📈 Sales Trends\n- 👥 Customer Insights\n- 🛍 Transaction Performance")
-st.sidebar.markdown("---")
-st.sidebar.title(" Feedback")
-
-feedback = st.sidebar.text_area("How can we improve?", height=100)
-if st.sidebar.button("Submit Feedback"):
-    st.sidebar.success(" Thanks for your feedback!")
